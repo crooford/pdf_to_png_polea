@@ -1,14 +1,16 @@
 import os
 from pdf2image import convert_from_path
+import const
 
 
 # URL DE POPPLER DENTRO DEL SISTEMA
-poppler_path = r"C:\Users\Seozz_\Downloads\poppler-0.68.0\bin"
+poppler_path = const.URL_POPPLER
+
 # URL DE CARPETA DE PDFS PARA CONVERTIR A PNG
-pdf_path = r"C:\Users\Seozz_\Downloads\TRABAJO\POKAL\TIMON\Correciones\PDF"
+pdf_path = const.URL_PDF
 
 # URL DE CARPETA DONDE SE GUARDAN LAS IMAGENES CONVERTIDAS
-folder = r"C:\Users\Seozz_\Downloads\TRABAJO\POKAL\TIMON\Correciones\IMG"
+folder = const.URL_IMG
 file_pdf = os.listdir(pdf_path)
 
 for file in file_pdf:
@@ -21,3 +23,4 @@ for file in file_pdf:
         img_name = f"{name}_jugador-{c}.png"
         page.save(os.path.join(saving_folder, img_name), "PNG")
         c += 1
+print("FIN PDF TO PNG")

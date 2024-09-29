@@ -1,9 +1,11 @@
 import os
+import const
 
-dir=r'C:\Users\Seozz_\Downloads\TRABAJO\POKAL\TIMON\Correciones\PDF'
-files_dir=os.listdir(dir)
-dir_save=r'C:\Users\Seozz_\Downloads\TRABAJO\POKAL\TIMON\Correciones\IMG'
-print(files_dir)
+dir = const.URL_PDF
+files_dir = os.listdir(dir)
+dir_save = const.URL_SAVE
+
 for file in files_dir:
-    name=file.replace('.pdf','')
-    os.makedirs(dir_save +'/'+name)
+    name = file.replace(".pdf", "")
+    os.makedirs(dir_save + "/" + name)
+print("EXITO RUTAS")
