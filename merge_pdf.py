@@ -29,7 +29,10 @@ def mergedFiles(cat: str, url_files: str, fig_cat: str):
 
         else:
             print(f"C:/Users/Seozz_/Desktop/pdf-fig/{fig_cat}/{name_file}.pdf")
-            shutil.move(f"C:/Users/Seozz_/Desktop/pdf-fig/{fig_cat}/{name_file}.pdf", f"C:/Users/Seozz_/Desktop/CopaT/{cat}/")
+            shutil.move(
+                f"C:/Users/Seozz_/Desktop/pdf-fig/{fig_cat}/{name_file}.pdf",
+                f"C:/Users/Seozz_/Desktop/CopaT/{cat}/"
+            )
 
 
 def get_List(url_files: str):
@@ -37,17 +40,17 @@ def get_List(url_files: str):
     for name_file in name_files:
         file_path = url_files + "/" + name_file
         lenfile = os.listdir(file_path)
-        if len(lenfile) > 9:
-            print(name_file, "-1")
-            print(name_file, "-2")
+        if len(lenfile) > 18:
+            print(name_file,"-1")
+            print(name_file,"-2")
 
         else:
             print(name_file)
 
 
-url_files = r"C:\Users\Seozz_\Desktop\CopaT\Cat 07\IMG"
-category = "Cat 07"
-fig_cat = "cat07"
+url_files = r"C:\Users\Seozz_\Desktop\CopaT\Cat 08\IMG"
+category = "Cat 08"
+fig_cat = "cat08"
 
 # get_List(url_files)
 
