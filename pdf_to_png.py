@@ -2,7 +2,6 @@ import os
 from pdf2image import convert_from_path
 import const
 
-
 # URL DE POPPLER DENTRO DEL SISTEMA
 poppler_path = const.URL_POPPLER
 
