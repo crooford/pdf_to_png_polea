@@ -4,12 +4,12 @@ import const
 
 # URL DE POPPLER DENTRO DEL SISTEMA
 poppler_path = const.URL_POPPLER
-
+categoria = "Cat 12"
 # URL DE CARPETA DE PDFS PARA CONVERTIR A PNG
-pdf_path = const.URL_PDF
+pdf_path = const.URL_BASE + "/" + categoria + "/PDF"
 
 # URL DE CARPETA DONDE SE GUARDAN LAS IMAGENES CONVERTIDAS
-folder = const.URL_IMG
+folder = const.URL_BASE + "/" + categoria + "/IMG"
 file_pdf = os.listdir(pdf_path)
 
 for file in file_pdf:
