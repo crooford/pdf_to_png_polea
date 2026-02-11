@@ -1,0 +1,463 @@
+2026-02-10 23:30:45 - pdf_processor - INFO - Iniciando pipeline completo...
+2026-02-10 23:30:45 - pdf_processor - INFO - Iniciando organización en C:\Users\carlo\Downloads\timon2026\categorias
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2010
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2011
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2012
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2013
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2014
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2015
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2016
+2026-02-10 23:30:45 - pdf_processor - INFO - Procesando categoría: 2017
+2026-02-10 23:30:46 - pdf_processor - INFO - Procesando categoría: 2018
+2026-02-10 23:30:46 - pdf_processor - INFO - Organización de archivos completada.
+2026-02-10 23:30:46 - pdf_processor - INFO - Iniciando conversión de PDF a PNG...
+2026-02-10 23:30:46 - pdf_processor - INFO - Convirtiendo: BIKINIS.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\BIKINIS
+2026-02-10 23:30:47 - pdf_processor - INFO - Convirtiendo: BIMBEROS (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\BIMBEROS (1)
+2026-02-10 23:30:48 - pdf_processor - INFO - Convirtiendo: BLACKOUTS (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\BLACKOUTS (2)
+2026-02-10 23:30:50 - pdf_processor - INFO - Convirtiendo: Brazuca.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Brazuca
+2026-02-10 23:30:51 - pdf_processor - INFO - Convirtiendo: CHAMPAGNE FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\CHAMPAGNE FC
+2026-02-10 23:30:52 - pdf_processor - INFO - Convirtiendo: Cloretss.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Cloretss
+2026-02-10 23:30:54 - pdf_processor - INFO - Convirtiendo: Diamantes de Acapulco (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Diamantes de Acapulco (1)
+2026-02-10 23:30:56 - pdf_processor - INFO - Convirtiendo: Equipo del Bienestar.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Equipo del Bienestar
+2026-02-10 23:30:57 - pdf_processor - INFO - Convirtiendo: HIBIKY.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\HIBIKY
+2026-02-10 23:30:59 - pdf_processor - INFO - Convirtiendo: IMPERIO FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\IMPERIO FC (1)
+2026-02-10 23:31:00 - pdf_processor - INFO - Convirtiendo: Lobos Jiutepec.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Lobos Jiutepec
+2026-02-10 23:31:02 - pdf_processor - INFO - Convirtiendo: MC FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\MC FC
+2026-02-10 23:31:03 - pdf_processor - INFO - Convirtiendo: Milán Cheros (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Milán Cheros (1)
+2026-02-10 23:31:04 - pdf_processor - INFO - Convirtiendo: Redentores FC (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Redentores FC (2)
+2026-02-10 23:31:05 - pdf_processor - INFO - Convirtiendo: Woodys.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Woodys
+2026-02-10 23:31:07 - pdf_processor - INFO - Convirtiendo: Zuscarnitas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2010\IMG\Zuscarnitas
+2026-02-10 23:31:08 - pdf_processor - INFO - Convirtiendo: Aguacateros de Tepetongo.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Aguacateros de Tepetongo
+2026-02-10 23:31:10 - pdf_processor - INFO - Convirtiendo: Apostólicos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Apostólicos
+2026-02-10 23:31:11 - pdf_processor - INFO - Convirtiendo: Atlético San Bartolo.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Atlético San Bartolo
+2026-02-10 23:31:12 - pdf_processor - INFO - Convirtiendo: Bengalas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Bengalas
+2026-02-10 23:31:14 - pdf_processor - INFO - Convirtiendo: FENIX FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\FENIX FC
+2026-02-10 23:31:16 - pdf_processor - INFO - Convirtiendo: Los Tumbados.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Los Tumbados
+2026-02-10 23:31:17 - pdf_processor - INFO - Convirtiendo: Mafia FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Mafia FC
+2026-02-10 23:31:19 - pdf_processor - INFO - Convirtiendo: Mc Queens.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Mc Queens
+2026-02-10 23:31:20 - pdf_processor - INFO - Convirtiendo: Mermeladores.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Mermeladores
+2026-02-10 23:31:22 - pdf_processor - INFO - Convirtiendo: PINGÜINOS FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\PINGÜINOS FC
+2026-02-10 23:31:23 - pdf_processor - INFO - Convirtiendo: Rockers.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Rockers
+2026-02-10 23:31:25 - pdf_processor - INFO - Convirtiendo: Rotoplas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Rotoplas
+2026-02-10 23:31:27 - pdf_processor - INFO - Convirtiendo: SkwinklesFC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\SkwinklesFC (1)
+2026-02-10 23:31:28 - pdf_processor - INFO - Convirtiendo: Tecos (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Tecos (2)
+2026-02-10 23:31:30 - pdf_processor - INFO - Convirtiendo: Tecos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Tecos
+2026-02-10 23:31:32 - pdf_processor - INFO - Convirtiendo: Tiburones Rojos (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Tiburones Rojos (2)
+2026-02-10 23:31:33 - pdf_processor - INFO - Convirtiendo: Troyanos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2011\IMG\Troyanos FC
+2026-02-10 23:31:35 - pdf_processor - INFO - Convirtiendo: Ajusco MX.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Ajusco MX
+2026-02-10 23:31:37 - pdf_processor - INFO - Convirtiendo: ALACRANES (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\ALACRANES (1)
+2026-02-10 23:31:38 - pdf_processor - INFO - Convirtiendo: Astonbirria.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Astonbirria
+2026-02-10 23:31:40 - pdf_processor - INFO - Convirtiendo: ATLETICO SERENGUETI.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\ATLETICO SERENGUETI
+2026-02-10 23:31:41 - pdf_processor - INFO - Convirtiendo: Atlético MSL (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Atlético MSL (1)
+2026-02-10 23:31:43 - pdf_processor - INFO - Convirtiendo: Espartanos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Espartanos
+2026-02-10 23:31:44 - pdf_processor - INFO - Convirtiendo: GALOS.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\GALOS
+2026-02-10 23:31:46 - pdf_processor - INFO - Convirtiendo: Jaibas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Jaibas
+2026-02-10 23:31:48 - pdf_processor - INFO - Convirtiendo: La Ley FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\La Ley FC
+2026-02-10 23:31:49 - pdf_processor - INFO - Convirtiendo: Magics.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Magics
+2026-02-10 23:31:50 - pdf_processor - INFO - Convirtiendo: Nopales (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Nopales (1)
+2026-02-10 23:31:52 - pdf_processor - INFO - Convirtiendo: PANADEROS FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\PANADEROS FC
+2026-02-10 23:31:53 - pdf_processor - INFO - Convirtiendo: Real soledad.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Real soledad
+2026-02-10 23:31:55 - pdf_processor - INFO - Convirtiendo: Sportif Legol FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Sportif Legol FC
+2026-02-10 23:31:56 - pdf_processor - INFO - Convirtiendo: Toross (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\Toross (1)
+2026-02-10 23:31:58 - pdf_processor - INFO - Convirtiendo: YANFRIS.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2012\IMG\YANFRIS
+2026-02-10 23:31:59 - pdf_processor - INFO - Convirtiendo: Aguilas jr.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Aguilas jr
+2026-02-10 23:32:01 - pdf_processor - INFO - Convirtiendo: Amigos FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Amigos FC (1)
+2026-02-10 23:32:02 - pdf_processor - INFO - Convirtiendo: Atlético Makakos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Atlético Makakos FC
+2026-02-10 23:32:04 - pdf_processor - INFO - Convirtiendo: Chiles FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Chiles FC
+2026-02-10 23:32:05 - pdf_processor - INFO - Convirtiendo: Don Juan.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Don Juan
+2026-02-10 23:32:07 - pdf_processor - INFO - Convirtiendo: FC Alas Doradas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\FC Alas Doradas
+2026-02-10 23:32:09 - pdf_processor - INFO - Convirtiendo: Game Kings.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Game Kings
+2026-02-10 23:32:10 - pdf_processor - INFO - Convirtiendo: Joya FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Joya FC
+2026-02-10 23:32:12 - pdf_processor - INFO - Convirtiendo: Nou Cracks FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Nou Cracks FC
+2026-02-10 23:32:13 - pdf_processor - INFO - Convirtiendo: Pit Bulls (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Pit Bulls (1)
+2026-02-10 23:32:15 - pdf_processor - INFO - Convirtiendo: Red sharks FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Red sharks FC
+2026-02-10 23:32:16 - pdf_processor - INFO - Convirtiendo: Relámpagos 2013.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Relámpagos 2013
+2026-02-10 23:32:18 - pdf_processor - INFO - Convirtiendo: SCORPIONS FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\SCORPIONS FC (1)
+2026-02-10 23:32:20 - pdf_processor - INFO - Convirtiendo: Sharks FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Sharks FC (1)
+2026-02-10 23:32:22 - pdf_processor - INFO - Convirtiendo: Toros aztecas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\Toros aztecas
+2026-02-10 23:32:23 - pdf_processor - INFO - Convirtiendo: UNITED FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2013\IMG\UNITED FC
+2026-02-10 23:32:25 - pdf_processor - INFO - Convirtiendo: Albatros FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Albatros FC
+2026-02-10 23:32:26 - pdf_processor - INFO - Convirtiendo: Cachorros United.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Cachorros United
+2026-02-10 23:32:29 - pdf_processor - INFO - Convirtiendo: Chamacos fc14.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Chamacos fc14
+2026-02-10 23:32:30 - pdf_processor - INFO - Convirtiendo: Ducks.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Ducks
+2026-02-10 23:32:32 - pdf_processor - INFO - Convirtiendo: Goal Kids.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Goal Kids
+2026-02-10 23:32:34 - pdf_processor - INFO - Convirtiendo: Hachas FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Hachas FC (1)
+2026-02-10 23:32:35 - pdf_processor - INFO - Convirtiendo: Killer Bees.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Killer Bees
+2026-02-10 23:32:37 - pdf_processor - INFO - Convirtiendo: Knights.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Knights
+2026-02-10 23:32:39 - pdf_processor - INFO - Convirtiendo: La Furia.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\La Furia
+2026-02-10 23:32:40 - pdf_processor - INFO - Convirtiendo: Leñadores FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Leñadores FC
+2026-02-10 23:32:41 - pdf_processor - INFO - Convirtiendo: Los Flaming Hot (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Los Flaming Hot (1)
+2026-02-10 23:32:43 - pdf_processor - INFO - Convirtiendo: Panthers.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Panthers
+2026-02-10 23:32:44 - pdf_processor - INFO - Convirtiendo: Potrillos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Potrillos
+2026-02-10 23:32:46 - pdf_processor - INFO - Convirtiendo: Real Mandril.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Real Mandril
+2026-02-10 23:32:47 - pdf_processor - INFO - Convirtiendo: Tiburoness.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Tiburoness
+2026-02-10 23:32:49 - pdf_processor - INFO - Convirtiendo: Toloks FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2014\IMG\Toloks FC
+2026-02-10 23:32:50 - pdf_processor - INFO - Convirtiendo: Aquamalas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Aquamalas
+2026-02-10 23:32:52 - pdf_processor - INFO - Convirtiendo: Bestias FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Bestias FC
+2026-02-10 23:32:53 - pdf_processor - INFO - Convirtiendo: Blau.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Blau
+2026-02-10 23:32:55 - pdf_processor - INFO - Convirtiendo: BROSKIS.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\BROSKIS
+2026-02-10 23:32:56 - pdf_processor - INFO - Convirtiendo: Capi.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Capi
+2026-02-10 23:32:58 - pdf_processor - INFO - Convirtiendo: Chamacos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Chamacos
+2026-02-10 23:32:59 - pdf_processor - INFO - Convirtiendo: City Juniors.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\City Juniors
+2026-02-10 23:33:01 - pdf_processor - INFO - Convirtiendo: HURACANES FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\HURACANES FC
+2026-02-10 23:33:02 - pdf_processor - INFO - Convirtiendo: Invictus FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Invictus FC
+2026-02-10 23:33:04 - pdf_processor - INFO - Convirtiendo: La Furia Asturiana.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\La Furia Asturiana
+2026-02-10 23:33:06 - pdf_processor - INFO - Convirtiendo: Mighty Lions.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Mighty Lions
+2026-02-10 23:33:08 - pdf_processor - INFO - Convirtiendo: Princesos (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Princesos (1)
+2026-02-10 23:33:09 - pdf_processor - INFO - Convirtiendo: THE MAGICS FC (3).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\THE MAGICS FC (3)
+2026-02-10 23:33:11 - pdf_processor - INFO - Convirtiendo: Toros (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Toros (1)
+2026-02-10 23:33:13 - pdf_processor - INFO - Convirtiendo: Troncos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Troncos FC
+2026-02-10 23:33:14 - pdf_processor - INFO - Convirtiendo: Wolfpack.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2015\IMG\Wolfpack
+2026-02-10 23:33:16 - pdf_processor - INFO - Convirtiendo: Ciervos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Ciervos
+2026-02-10 23:33:17 - pdf_processor - INFO - Convirtiendo: Cobras Club.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Cobras Club
+2026-02-10 23:33:19 - pdf_processor - INFO - Convirtiendo: Crokos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Crokos FC
+2026-02-10 23:33:20 - pdf_processor - INFO - Convirtiendo: Fénix United.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Fénix United
+2026-02-10 23:33:22 - pdf_processor - INFO - Convirtiendo: GALACTIKOS FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\GALACTIKOS FC
+2026-02-10 23:33:24 - pdf_processor - INFO - Convirtiendo: Gansos16.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Gansos16
+2026-02-10 23:33:25 - pdf_processor - INFO - Convirtiendo: GRANA FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\GRANA FC
+2026-02-10 23:33:27 - pdf_processor - INFO - Convirtiendo: Legends FC (3).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Legends FC (3)
+2026-02-10 23:33:28 - pdf_processor - INFO - Convirtiendo: Legión de Reconocimiento.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Legión de Reconocimiento
+2026-02-10 23:33:30 - pdf_processor - INFO - Convirtiendo: Niupi.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Niupi
+2026-02-10 23:33:31 - pdf_processor - INFO - Convirtiendo: Rockets Juve.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Rockets Juve
+2026-02-10 23:33:33 - pdf_processor - INFO - Convirtiendo: Six Seven.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Six Seven
+2026-02-10 23:33:34 - pdf_processor - INFO - Convirtiendo: Super Bros FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Super Bros FC
+2026-02-10 23:33:36 - pdf_processor - INFO - Convirtiendo: Super Campeones.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\Super Campeones
+2026-02-10 23:33:38 - pdf_processor - INFO - Convirtiendo: ThundersFC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\ThundersFC (1)
+2026-02-10 23:33:39 - pdf_processor - INFO - Convirtiendo: TITANES ROJO16.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2016\IMG\TITANES ROJO16
+2026-02-10 23:33:41 - pdf_processor - INFO - Convirtiendo: Ardillas Salvajes F.C (4).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Ardillas Salvajes F.C (4)
+2026-02-10 23:33:43 - pdf_processor - INFO - Convirtiendo: Cachorros FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Cachorros FC
+2026-02-10 23:33:45 - pdf_processor - INFO - Convirtiendo: Cobras 17.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Cobras 17
+2026-02-10 23:33:47 - pdf_processor - INFO - Convirtiendo: Dragones de Fuego.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Dragones de Fuego
+2026-02-10 23:33:49 - pdf_processor - INFO - Convirtiendo: DRAGONES REBELDES (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\DRAGONES REBELDES (2)
+2026-02-10 23:33:50 - pdf_processor - INFO - Convirtiendo: Fighters.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Fighters
+2026-02-10 23:33:53 - pdf_processor - INFO - Convirtiendo: FIREHAWKS.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\FIREHAWKS
+2026-02-10 23:33:55 - pdf_processor - INFO - Convirtiendo: Gallos de Fuego.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Gallos de Fuego
+2026-02-10 23:33:57 - pdf_processor - INFO - Convirtiendo: Gansos17 (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Gansos17 (1)
+2026-02-10 23:33:59 - pdf_processor - INFO - Convirtiendo: Goat FC (3).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Goat FC (3)
+2026-02-10 23:34:00 - pdf_processor - INFO - Convirtiendo: Guerreros (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Guerreros (2)
+2026-02-10 23:34:01 - pdf_processor - INFO - Convirtiendo: Guerreros.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Guerreros
+2026-02-10 23:34:02 - pdf_processor - INFO - Convirtiendo: Halcones 17.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Halcones 17
+2026-02-10 23:34:04 - pdf_processor - INFO - Convirtiendo: Krakenns FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Krakenns FC
+2026-02-10 23:34:07 - pdf_processor - INFO - Convirtiendo: Lions (2).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Lions (2)
+2026-02-10 23:34:08 - pdf_processor - INFO - Convirtiendo: Los Gladidadores.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Los Gladidadores
+2026-02-10 23:34:10 - pdf_processor - INFO - Convirtiendo: Los Tacos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2017\IMG\Los Tacos FC
+2026-02-10 23:34:11 - pdf_processor - INFO - Convirtiendo: Azores.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Azores
+2026-02-10 23:34:13 - pdf_processor - INFO - Convirtiendo: BATAL FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\BATAL FC
+2026-02-10 23:34:14 - pdf_processor - INFO - Convirtiendo: Bobcats Jr.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Bobcats Jr
+2026-02-10 23:34:15 - pdf_processor - INFO - Convirtiendo: Chamac-os FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Chamac-os FC
+2026-02-10 23:34:16 - pdf_processor - INFO - Convirtiendo: CHIMUELOS FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\CHIMUELOS FC
+2026-02-10 23:34:18 - pdf_processor - INFO - Convirtiendo: Dinamitas (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Dinamitas (1)
+2026-02-10 23:34:19 - pdf_processor - INFO - Convirtiendo: Golácticos FC (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Golácticos FC (1)
+2026-02-10 23:34:21 - pdf_processor - INFO - Convirtiendo: Golácticos FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Golácticos FC
+2026-02-10 23:34:22 - pdf_processor - INFO - Convirtiendo: Halcones FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Halcones FC
+2026-02-10 23:34:24 - pdf_processor - INFO - Convirtiendo: Hooligans LG.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Hooligans LG
+2026-02-10 23:34:25 - pdf_processor - INFO - Convirtiendo: Kickers FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Kickers FC
+2026-02-10 23:34:26 - pdf_processor - INFO - Convirtiendo: Los Broos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Los Broos
+2026-02-10 23:34:28 - pdf_processor - INFO - Convirtiendo: Los Cracks FC.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Los Cracks FC
+2026-02-10 23:34:30 - pdf_processor - INFO - Convirtiendo: Mini beast fc (1).pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Mini beast fc (1)
+2026-02-10 23:34:32 - pdf_processor - INFO - Convirtiendo: Mini beast fc.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Mini beast fc
+2026-02-10 23:34:34 - pdf_processor - INFO - Convirtiendo: Mini Galácticos.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Mini Galácticos
+2026-02-10 23:34:36 - pdf_processor - INFO - Convirtiendo: Ninjas.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Ninjas
+2026-02-10 23:34:38 - pdf_processor - INFO - Convirtiendo: Wild dogs.pdf -> C:\Users\carlo\Downloads\timon2026\categorias\2018\IMG\Wild dogs
+2026-02-10 23:34:39 - pdf_processor - INFO - Conversión de PDF a PNG finalizada.
+2026-02-10 23:34:39 - pdf_processor - INFO - Iniciando recorte de imágenes...
+2026-02-10 23:37:05 - pdf_processor - INFO - Recorte de imágenes finalizado.
+2026-02-10 23:37:05 - pdf_processor - INFO - Iniciando generación de PDFs personalizados (A4)...
+2026-02-10 23:37:05 - pdf_processor - INFO - Procesando equipo para PDF: BIKINIS (9 imágenes)
+2026-02-10 23:37:06 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\BIKINIS.pdf
+2026-02-10 23:37:06 - pdf_processor - INFO - Procesando equipo para PDF: BIMBEROS (1) (9 imágenes)
+2026-02-10 23:37:07 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\BIMBEROS (1).pdf
+2026-02-10 23:37:07 - pdf_processor - INFO - Procesando equipo para PDF: BLACKOUTS (2) (10 imágenes)
+2026-02-10 23:37:09 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\BLACKOUTS (2).pdf
+2026-02-10 23:37:09 - pdf_processor - INFO - Procesando equipo para PDF: Brazuca (12 imágenes)
+2026-02-10 23:37:10 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Brazuca.pdf
+2026-02-10 23:37:10 - pdf_processor - INFO - Procesando equipo para PDF: CHAMPAGNE FC (11 imágenes)
+2026-02-10 23:37:11 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\CHAMPAGNE FC.pdf
+2026-02-10 23:37:11 - pdf_processor - INFO - Procesando equipo para PDF: Cloretss (13 imágenes)
+2026-02-10 23:37:13 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Cloretss.pdf
+2026-02-10 23:37:13 - pdf_processor - INFO - Procesando equipo para PDF: Diamantes de Acapulco (1) (11 imágenes)
+2026-02-10 23:37:14 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Diamantes de Acapulco (1).pdf
+2026-02-10 23:37:14 - pdf_processor - INFO - Procesando equipo para PDF: Equipo del Bienestar (13 imágenes)
+2026-02-10 23:37:16 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Equipo del Bienestar.pdf
+2026-02-10 23:37:16 - pdf_processor - INFO - Procesando equipo para PDF: HIBIKY (12 imágenes)
+2026-02-10 23:37:17 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\HIBIKY.pdf
+2026-02-10 23:37:17 - pdf_processor - INFO - Procesando equipo para PDF: IMPERIO FC (1) (10 imágenes)
+2026-02-10 23:37:18 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\IMPERIO FC (1).pdf
+2026-02-10 23:37:18 - pdf_processor - INFO - Procesando equipo para PDF: Lobos Jiutepec (11 imágenes)
+2026-02-10 23:37:20 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Lobos Jiutepec.pdf
+2026-02-10 23:37:20 - pdf_processor - INFO - Procesando equipo para PDF: MC FC (9 imágenes)
+2026-02-10 23:37:21 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\MC FC.pdf
+2026-02-10 23:37:21 - pdf_processor - INFO - Procesando equipo para PDF: Milán Cheros (1) (10 imágenes)
+2026-02-10 23:37:22 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Milán Cheros (1).pdf
+2026-02-10 23:37:22 - pdf_processor - INFO - Procesando equipo para PDF: Redentores FC (2) (11 imágenes)
+2026-02-10 23:37:23 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Redentores FC (2).pdf
+2026-02-10 23:37:23 - pdf_processor - INFO - Procesando equipo para PDF: Woodys (12 imágenes)
+2026-02-10 23:37:25 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Woodys.pdf
+2026-02-10 23:37:25 - pdf_processor - INFO - Procesando equipo para PDF: Zuscarnitas (10 imágenes)
+2026-02-10 23:37:26 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2010\Zuscarnitas.pdf
+2026-02-10 23:37:26 - pdf_processor - INFO - Procesando equipo para PDF: Aguacateros de Tepetongo (11 imágenes)
+2026-02-10 23:37:27 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Aguacateros de Tepetongo.pdf
+2026-02-10 23:37:27 - pdf_processor - INFO - Procesando equipo para PDF: Apostólicos (11 imágenes)
+2026-02-10 23:37:28 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Apostólicos.pdf
+2026-02-10 23:37:28 - pdf_processor - INFO - Procesando equipo para PDF: Atlético San Bartolo (10 imágenes)
+2026-02-10 23:37:29 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Atlético San Bartolo.pdf
+2026-02-10 23:37:29 - pdf_processor - INFO - Procesando equipo para PDF: Bengalas (13 imágenes)
+2026-02-10 23:37:30 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Bengalas.pdf
+2026-02-10 23:37:30 - pdf_processor - INFO - Procesando equipo para PDF: FENIX FC (13 imágenes)
+2026-02-10 23:37:31 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\FENIX FC.pdf
+2026-02-10 23:37:31 - pdf_processor - INFO - Procesando equipo para PDF: Los Tumbados (10 imágenes)
+2026-02-10 23:37:32 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Los Tumbados.pdf
+2026-02-10 23:37:32 - pdf_processor - INFO - Procesando equipo para PDF: Mafia FC (11 imágenes)
+2026-02-10 23:37:33 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Mafia FC.pdf
+2026-02-10 23:37:33 - pdf_processor - INFO - Procesando equipo para PDF: Mc Queens (10 imágenes)
+2026-02-10 23:37:34 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Mc Queens.pdf
+2026-02-10 23:37:34 - pdf_processor - INFO - Procesando equipo para PDF: Mermeladores (10 imágenes)
+2026-02-10 23:37:36 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Mermeladores.pdf
+2026-02-10 23:37:36 - pdf_processor - INFO - Procesando equipo para PDF: PINGÜINOS FC (10 imágenes)
+2026-02-10 23:37:37 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\PINGÜINOS FC.pdf
+2026-02-10 23:37:37 - pdf_processor - INFO - Procesando equipo para PDF: Rockers (12 imágenes)
+2026-02-10 23:37:38 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Rockers.pdf
+2026-02-10 23:37:38 - pdf_processor - INFO - Procesando equipo para PDF: Rotoplas (12 imágenes)
+2026-02-10 23:37:40 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Rotoplas.pdf
+2026-02-10 23:37:40 - pdf_processor - INFO - Procesando equipo para PDF: SkwinklesFC (1) (11 imágenes)
+2026-02-10 23:37:41 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\SkwinklesFC (1).pdf
+2026-02-10 23:37:41 - pdf_processor - INFO - Procesando equipo para PDF: Tecos (12 imágenes)
+2026-02-10 23:37:43 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Tecos.pdf
+2026-02-10 23:37:43 - pdf_processor - INFO - Procesando equipo para PDF: Tecos (2) (12 imágenes)
+2026-02-10 23:37:44 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Tecos (2).pdf
+2026-02-10 23:37:44 - pdf_processor - INFO - Procesando equipo para PDF: Tiburones Rojos (2) (12 imágenes)
+2026-02-10 23:37:45 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Tiburones Rojos (2).pdf
+2026-02-10 23:37:45 - pdf_processor - INFO - Procesando equipo para PDF: Troyanos FC (14 imágenes)
+2026-02-10 23:37:47 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2011\Troyanos FC.pdf
+2026-02-10 23:37:47 - pdf_processor - INFO - Procesando equipo para PDF: Ajusco MX (10 imágenes)
+2026-02-10 23:37:49 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Ajusco MX.pdf
+2026-02-10 23:37:49 - pdf_processor - INFO - Procesando equipo para PDF: ALACRANES (1) (8 imágenes)
+2026-02-10 23:37:50 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\ALACRANES (1).pdf
+2026-02-10 23:37:50 - pdf_processor - INFO - Procesando equipo para PDF: Astonbirria (13 imágenes)
+2026-02-10 23:37:52 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Astonbirria.pdf
+2026-02-10 23:37:52 - pdf_processor - INFO - Procesando equipo para PDF: ATLETICO SERENGUETI (11 imágenes)
+2026-02-10 23:37:53 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\ATLETICO SERENGUETI.pdf
+2026-02-10 23:37:53 - pdf_processor - INFO - Procesando equipo para PDF: Atlético MSL (1) (8 imágenes)
+2026-02-10 23:37:54 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Atlético MSL (1).pdf
+2026-02-10 23:37:54 - pdf_processor - INFO - Procesando equipo para PDF: Espartanos (12 imágenes)
+2026-02-10 23:37:55 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Espartanos.pdf
+2026-02-10 23:37:55 - pdf_processor - INFO - Procesando equipo para PDF: GALOS (13 imágenes)
+2026-02-10 23:37:57 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\GALOS.pdf
+2026-02-10 23:37:57 - pdf_processor - INFO - Procesando equipo para PDF: Jaibas (10 imágenes)
+2026-02-10 23:37:58 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Jaibas.pdf
+2026-02-10 23:37:58 - pdf_processor - INFO - Procesando equipo para PDF: La Ley FC (7 imágenes)
+2026-02-10 23:37:59 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\La Ley FC.pdf
+2026-02-10 23:37:59 - pdf_processor - INFO - Procesando equipo para PDF: Magics (11 imágenes)
+2026-02-10 23:38:01 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Magics.pdf
+2026-02-10 23:38:01 - pdf_processor - INFO - Procesando equipo para PDF: Nopales (1) (11 imágenes)
+2026-02-10 23:38:02 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Nopales (1).pdf
+2026-02-10 23:38:02 - pdf_processor - INFO - Procesando equipo para PDF: PANADEROS FC (12 imágenes)
+2026-02-10 23:38:04 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\PANADEROS FC.pdf
+2026-02-10 23:38:04 - pdf_processor - INFO - Procesando equipo para PDF: Real soledad (9 imágenes)
+2026-02-10 23:38:05 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Real soledad.pdf
+2026-02-10 23:38:05 - pdf_processor - INFO - Procesando equipo para PDF: Sportif Legol FC (12 imágenes)
+2026-02-10 23:38:06 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Sportif Legol FC.pdf
+2026-02-10 23:38:06 - pdf_processor - INFO - Procesando equipo para PDF: Toross (1) (9 imágenes)
+2026-02-10 23:38:07 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\Toross (1).pdf
+2026-02-10 23:38:07 - pdf_processor - INFO - Procesando equipo para PDF: YANFRIS (10 imágenes)
+2026-02-10 23:38:09 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2012\YANFRIS.pdf
+2026-02-10 23:38:09 - pdf_processor - INFO - Procesando equipo para PDF: Aguilas jr (10 imágenes)
+2026-02-10 23:38:10 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Aguilas jr.pdf
+2026-02-10 23:38:10 - pdf_processor - INFO - Procesando equipo para PDF: Amigos FC (1) (11 imágenes)
+2026-02-10 23:38:11 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Amigos FC (1).pdf
+2026-02-10 23:38:11 - pdf_processor - INFO - Procesando equipo para PDF: Atlético Makakos FC (13 imágenes)
+2026-02-10 23:38:13 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Atlético Makakos FC.pdf
+2026-02-10 23:38:13 - pdf_processor - INFO - Procesando equipo para PDF: Chiles FC (10 imágenes)
+2026-02-10 23:38:14 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Chiles FC.pdf
+2026-02-10 23:38:14 - pdf_processor - INFO - Procesando equipo para PDF: Don Juan (11 imágenes)
+2026-02-10 23:38:15 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Don Juan.pdf
+2026-02-10 23:38:15 - pdf_processor - INFO - Procesando equipo para PDF: FC Alas Doradas (12 imágenes)
+2026-02-10 23:38:16 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\FC Alas Doradas.pdf
+2026-02-10 23:38:16 - pdf_processor - INFO - Procesando equipo para PDF: Game Kings (14 imágenes)
+2026-02-10 23:38:18 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Game Kings.pdf
+2026-02-10 23:38:18 - pdf_processor - INFO - Procesando equipo para PDF: Joya FC (10 imágenes)
+2026-02-10 23:38:19 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Joya FC.pdf
+2026-02-10 23:38:19 - pdf_processor - INFO - Procesando equipo para PDF: Nou Cracks FC (10 imágenes)
+2026-02-10 23:38:20 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Nou Cracks FC.pdf
+2026-02-10 23:38:20 - pdf_processor - INFO - Procesando equipo para PDF: Pit Bulls (1) (11 imágenes)
+2026-02-10 23:38:21 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Pit Bulls (1).pdf
+2026-02-10 23:38:21 - pdf_processor - INFO - Procesando equipo para PDF: Red sharks FC (12 imágenes)
+2026-02-10 23:38:22 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Red sharks FC.pdf
+2026-02-10 23:38:22 - pdf_processor - INFO - Procesando equipo para PDF: Relámpagos 2013 (14 imágenes)
+2026-02-10 23:38:24 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Relámpagos 2013.pdf
+2026-02-10 23:38:24 - pdf_processor - INFO - Procesando equipo para PDF: SCORPIONS FC (1) (11 imágenes)
+2026-02-10 23:38:25 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\SCORPIONS FC (1).pdf
+2026-02-10 23:38:25 - pdf_processor - INFO - Procesando equipo para PDF: Sharks FC (1) (11 imágenes)
+2026-02-10 23:38:26 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Sharks FC (1).pdf
+2026-02-10 23:38:26 - pdf_processor - INFO - Procesando equipo para PDF: Toros aztecas (12 imágenes)
+2026-02-10 23:38:27 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\Toros aztecas.pdf
+2026-02-10 23:38:27 - pdf_processor - INFO - Procesando equipo para PDF: UNITED FC (10 imágenes)
+2026-02-10 23:38:28 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2013\UNITED FC.pdf
+2026-02-10 23:38:28 - pdf_processor - INFO - Procesando equipo para PDF: Albatros FC (13 imágenes)
+2026-02-10 23:38:29 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Albatros FC.pdf
+2026-02-10 23:38:29 - pdf_processor - INFO - Procesando equipo para PDF: Cachorros United (14 imágenes)
+2026-02-10 23:38:30 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Cachorros United.pdf
+2026-02-10 23:38:30 - pdf_processor - INFO - Procesando equipo para PDF: Chamacos fc14 (11 imágenes)
+2026-02-10 23:38:32 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Chamacos fc14.pdf
+2026-02-10 23:38:32 - pdf_processor - INFO - Procesando equipo para PDF: Ducks (13 imágenes)
+2026-02-10 23:38:33 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Ducks.pdf
+2026-02-10 23:38:33 - pdf_processor - INFO - Procesando equipo para PDF: Goal Kids (13 imágenes)
+2026-02-10 23:38:34 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Goal Kids.pdf
+2026-02-10 23:38:34 - pdf_processor - INFO - Procesando equipo para PDF: Hachas FC (1) (10 imágenes)
+2026-02-10 23:38:35 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Hachas FC (1).pdf
+2026-02-10 23:38:35 - pdf_processor - INFO - Procesando equipo para PDF: Killer Bees (12 imágenes)
+2026-02-10 23:38:36 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Killer Bees.pdf
+2026-02-10 23:38:36 - pdf_processor - INFO - Procesando equipo para PDF: Knights (11 imágenes)
+2026-02-10 23:38:37 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Knights.pdf
+2026-02-10 23:38:37 - pdf_processor - INFO - Procesando equipo para PDF: La Furia (9 imágenes)
+2026-02-10 23:38:38 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\La Furia.pdf
+2026-02-10 23:38:38 - pdf_processor - INFO - Procesando equipo para PDF: Leñadores FC (10 imágenes)
+2026-02-10 23:38:39 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Leñadores FC.pdf
+2026-02-10 23:38:39 - pdf_processor - INFO - Procesando equipo para PDF: Los Flaming Hot (1) (12 imágenes)
+2026-02-10 23:38:40 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Los Flaming Hot (1).pdf
+2026-02-10 23:38:40 - pdf_processor - INFO - Procesando equipo para PDF: Panthers (11 imágenes)
+2026-02-10 23:38:41 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Panthers.pdf
+2026-02-10 23:38:41 - pdf_processor - INFO - Procesando equipo para PDF: Potrillos (13 imágenes)
+2026-02-10 23:38:42 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Potrillos.pdf
+2026-02-10 23:38:42 - pdf_processor - INFO - Procesando equipo para PDF: Real Mandril (10 imágenes)
+2026-02-10 23:38:43 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Real Mandril.pdf
+2026-02-10 23:38:43 - pdf_processor - INFO - Procesando equipo para PDF: Tiburoness (10 imágenes)
+2026-02-10 23:38:44 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Tiburoness.pdf
+2026-02-10 23:38:44 - pdf_processor - INFO - Procesando equipo para PDF: Toloks FC (11 imágenes)
+2026-02-10 23:38:45 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2014\Toloks FC.pdf
+2026-02-10 23:38:45 - pdf_processor - INFO - Procesando equipo para PDF: Aquamalas (13 imágenes)
+2026-02-10 23:38:47 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Aquamalas.pdf
+2026-02-10 23:38:47 - pdf_processor - INFO - Procesando equipo para PDF: Bestias FC (11 imágenes)
+2026-02-10 23:38:48 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Bestias FC.pdf
+2026-02-10 23:38:48 - pdf_processor - INFO - Procesando equipo para PDF: Blau (11 imágenes)
+2026-02-10 23:38:49 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Blau.pdf
+2026-02-10 23:38:49 - pdf_processor - INFO - Procesando equipo para PDF: BROSKIS (10 imágenes)
+2026-02-10 23:38:50 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\BROSKIS.pdf
+2026-02-10 23:38:50 - pdf_processor - INFO - Procesando equipo para PDF: Capi (12 imágenes)
+2026-02-10 23:38:51 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Capi.pdf
+2026-02-10 23:38:51 - pdf_processor - INFO - Procesando equipo para PDF: Chamacos (14 imágenes)
+2026-02-10 23:38:52 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Chamacos.pdf
+2026-02-10 23:38:52 - pdf_processor - INFO - Procesando equipo para PDF: City Juniors (12 imágenes)
+2026-02-10 23:38:54 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\City Juniors.pdf
+2026-02-10 23:38:54 - pdf_processor - INFO - Procesando equipo para PDF: HURACANES FC (11 imágenes)
+2026-02-10 23:38:55 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\HURACANES FC.pdf
+2026-02-10 23:38:55 - pdf_processor - INFO - Procesando equipo para PDF: Invictus FC (14 imágenes)
+2026-02-10 23:38:56 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Invictus FC.pdf
+2026-02-10 23:38:56 - pdf_processor - INFO - Procesando equipo para PDF: La Furia Asturiana (11 imágenes)
+2026-02-10 23:38:57 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\La Furia Asturiana.pdf
+2026-02-10 23:38:57 - pdf_processor - INFO - Procesando equipo para PDF: Mighty Lions (14 imágenes)
+2026-02-10 23:38:58 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Mighty Lions.pdf
+2026-02-10 23:38:58 - pdf_processor - INFO - Procesando equipo para PDF: Princesos (1) (11 imágenes)
+2026-02-10 23:38:59 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Princesos (1).pdf
+2026-02-10 23:38:59 - pdf_processor - INFO - Procesando equipo para PDF: THE MAGICS FC (3) (12 imágenes)
+2026-02-10 23:39:01 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\THE MAGICS FC (3).pdf
+2026-02-10 23:39:01 - pdf_processor - INFO - Procesando equipo para PDF: Toros (1) (14 imágenes)
+2026-02-10 23:39:02 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Toros (1).pdf
+2026-02-10 23:39:02 - pdf_processor - INFO - Procesando equipo para PDF: Troncos FC (11 imágenes)
+2026-02-10 23:39:03 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Troncos FC.pdf
+2026-02-10 23:39:03 - pdf_processor - INFO - Procesando equipo para PDF: Wolfpack (13 imágenes)
+2026-02-10 23:39:04 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2015\Wolfpack.pdf
+2026-02-10 23:39:04 - pdf_processor - INFO - Procesando equipo para PDF: Ciervos (12 imágenes)
+2026-02-10 23:39:05 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Ciervos.pdf
+2026-02-10 23:39:05 - pdf_processor - INFO - Procesando equipo para PDF: Cobras Club (12 imágenes)
+2026-02-10 23:39:07 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Cobras Club.pdf
+2026-02-10 23:39:07 - pdf_processor - INFO - Procesando equipo para PDF: Crokos FC (13 imágenes)
+2026-02-10 23:39:08 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Crokos FC.pdf
+2026-02-10 23:39:08 - pdf_processor - INFO - Procesando equipo para PDF: Fénix United (11 imágenes)
+2026-02-10 23:39:09 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Fénix United.pdf
+2026-02-10 23:39:09 - pdf_processor - INFO - Procesando equipo para PDF: GALACTIKOS FC (13 imágenes)
+2026-02-10 23:39:10 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\GALACTIKOS FC.pdf
+2026-02-10 23:39:10 - pdf_processor - INFO - Procesando equipo para PDF: Gansos16 (12 imágenes)
+2026-02-10 23:39:11 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Gansos16.pdf
+2026-02-10 23:39:11 - pdf_processor - INFO - Procesando equipo para PDF: GRANA FC (13 imágenes)
+2026-02-10 23:39:12 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\GRANA FC.pdf
+2026-02-10 23:39:12 - pdf_processor - INFO - Procesando equipo para PDF: Legends FC (3) (10 imágenes)
+2026-02-10 23:39:13 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Legends FC (3).pdf
+2026-02-10 23:39:13 - pdf_processor - INFO - Procesando equipo para PDF: Legión de Reconocimiento (11 imágenes)
+2026-02-10 23:39:15 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Legión de Reconocimiento.pdf
+2026-02-10 23:39:15 - pdf_processor - INFO - Procesando equipo para PDF: Niupi (9 imágenes)
+2026-02-10 23:39:15 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Niupi.pdf
+2026-02-10 23:39:15 - pdf_processor - INFO - Procesando equipo para PDF: Rockets Juve (11 imágenes)
+2026-02-10 23:39:16 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Rockets Juve.pdf
+2026-02-10 23:39:16 - pdf_processor - INFO - Procesando equipo para PDF: Six Seven (10 imágenes)
+2026-02-10 23:39:17 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Six Seven.pdf
+2026-02-10 23:39:17 - pdf_processor - INFO - Procesando equipo para PDF: Super Bros FC (14 imágenes)
+2026-02-10 23:39:19 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Super Bros FC.pdf
+2026-02-10 23:39:19 - pdf_processor - INFO - Procesando equipo para PDF: Super Campeones (11 imágenes)
+2026-02-10 23:39:20 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\Super Campeones.pdf
+2026-02-10 23:39:20 - pdf_processor - INFO - Procesando equipo para PDF: ThundersFC (1) (11 imágenes)
+2026-02-10 23:39:21 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\ThundersFC (1).pdf
+2026-02-10 23:39:21 - pdf_processor - INFO - Procesando equipo para PDF: TITANES ROJO16 (14 imágenes)
+2026-02-10 23:39:22 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2016\TITANES ROJO16.pdf
+2026-02-10 23:39:22 - pdf_processor - INFO - Procesando equipo para PDF: Ardillas Salvajes F.C (4) (12 imágenes)
+2026-02-10 23:39:23 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Ardillas Salvajes F.C (4).pdf
+2026-02-10 23:39:23 - pdf_processor - INFO - Procesando equipo para PDF: Cachorros FC (12 imágenes)
+2026-02-10 23:39:24 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Cachorros FC.pdf
+2026-02-10 23:39:24 - pdf_processor - INFO - Procesando equipo para PDF: Cobras 17 (11 imágenes)
+2026-02-10 23:39:25 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Cobras 17.pdf
+2026-02-10 23:39:25 - pdf_processor - INFO - Procesando equipo para PDF: Dragones de Fuego (14 imágenes)
+2026-02-10 23:39:27 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Dragones de Fuego.pdf
+2026-02-10 23:39:27 - pdf_processor - INFO - Procesando equipo para PDF: DRAGONES REBELDES (2) (10 imágenes)
+2026-02-10 23:39:28 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\DRAGONES REBELDES (2).pdf
+2026-02-10 23:39:28 - pdf_processor - INFO - Procesando equipo para PDF: Fighters (12 imágenes)
+2026-02-10 23:39:29 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Fighters.pdf
+2026-02-10 23:39:29 - pdf_processor - INFO - Procesando equipo para PDF: FIREHAWKS (13 imágenes)
+2026-02-10 23:39:30 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\FIREHAWKS.pdf
+2026-02-10 23:39:30 - pdf_processor - INFO - Procesando equipo para PDF: Gallos de Fuego (14 imágenes)
+2026-02-10 23:39:31 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Gallos de Fuego.pdf
+2026-02-10 23:39:31 - pdf_processor - INFO - Procesando equipo para PDF: Gansos17 (1) (12 imágenes)
+2026-02-10 23:39:32 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Gansos17 (1).pdf
+2026-02-10 23:39:32 - pdf_processor - INFO - Procesando equipo para PDF: Goat FC (3) (10 imágenes)
+2026-02-10 23:39:33 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Goat FC (3).pdf
+2026-02-10 23:39:33 - pdf_processor - INFO - Procesando equipo para PDF: Guerreros (8 imágenes)
+2026-02-10 23:39:34 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Guerreros.pdf
+2026-02-10 23:39:34 - pdf_processor - INFO - Procesando equipo para PDF: Guerreros (2) (9 imágenes)
+2026-02-10 23:39:35 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Guerreros (2).pdf
+2026-02-10 23:39:35 - pdf_processor - INFO - Procesando equipo para PDF: Halcones 17 (12 imágenes)
+2026-02-10 23:39:36 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Halcones 17.pdf
+2026-02-10 23:39:36 - pdf_processor - INFO - Procesando equipo para PDF: Krakenns FC (14 imágenes)
+2026-02-10 23:39:37 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Krakenns FC.pdf
+2026-02-10 23:39:37 - pdf_processor - INFO - Procesando equipo para PDF: Lions (2) (12 imágenes)
+2026-02-10 23:39:38 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Lions (2).pdf
+2026-02-10 23:39:38 - pdf_processor - INFO - Procesando equipo para PDF: Los Gladidadores (10 imágenes)
+2026-02-10 23:39:39 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Los Gladidadores.pdf
+2026-02-10 23:39:39 - pdf_processor - INFO - Procesando equipo para PDF: Los Tacos FC (11 imágenes)
+2026-02-10 23:39:40 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2017\Los Tacos FC.pdf
+2026-02-10 23:39:40 - pdf_processor - INFO - Procesando equipo para PDF: Azores (10 imágenes)
+2026-02-10 23:39:41 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Azores.pdf
+2026-02-10 23:39:41 - pdf_processor - INFO - Procesando equipo para PDF: BATAL FC (9 imágenes)
+2026-02-10 23:39:42 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\BATAL FC.pdf
+2026-02-10 23:39:42 - pdf_processor - INFO - Procesando equipo para PDF: Bobcats Jr (9 imágenes)
+2026-02-10 23:39:43 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Bobcats Jr.pdf
+2026-02-10 23:39:43 - pdf_processor - INFO - Procesando equipo para PDF: Chamac-os FC (11 imágenes)
+2026-02-10 23:39:44 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Chamac-os FC.pdf
+2026-02-10 23:39:44 - pdf_processor - INFO - Procesando equipo para PDF: CHIMUELOS FC (10 imágenes)
+2026-02-10 23:39:45 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\CHIMUELOS FC.pdf
+2026-02-10 23:39:45 - pdf_processor - INFO - Procesando equipo para PDF: Dinamitas (1) (14 imágenes)
+2026-02-10 23:39:46 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Dinamitas (1).pdf
+2026-02-10 23:39:46 - pdf_processor - INFO - Procesando equipo para PDF: Golácticos FC (11 imágenes)
+2026-02-10 23:39:47 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Golácticos FC.pdf
+2026-02-10 23:39:47 - pdf_processor - INFO - Procesando equipo para PDF: Golácticos FC (1) (11 imágenes)
+2026-02-10 23:39:48 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Golácticos FC (1).pdf
+2026-02-10 23:39:48 - pdf_processor - INFO - Procesando equipo para PDF: Halcones FC (11 imágenes)
+2026-02-10 23:39:49 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Halcones FC.pdf
+2026-02-10 23:39:49 - pdf_processor - INFO - Procesando equipo para PDF: Hooligans LG (10 imágenes)
+2026-02-10 23:39:50 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Hooligans LG.pdf
+2026-02-10 23:39:50 - pdf_processor - INFO - Procesando equipo para PDF: Kickers FC (9 imágenes)
+2026-02-10 23:39:51 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Kickers FC.pdf
+2026-02-10 23:39:51 - pdf_processor - INFO - Procesando equipo para PDF: Los Broos (10 imágenes)
+2026-02-10 23:39:52 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Los Broos.pdf
+2026-02-10 23:39:52 - pdf_processor - INFO - Procesando equipo para PDF: Los Cracks FC (14 imágenes)
+2026-02-10 23:39:53 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Los Cracks FC.pdf
+2026-02-10 23:39:53 - pdf_processor - INFO - Procesando equipo para PDF: Mini beast fc (14 imágenes)
+2026-02-10 23:39:55 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Mini beast fc.pdf
+2026-02-10 23:39:55 - pdf_processor - INFO - Procesando equipo para PDF: Mini beast fc (1) (14 imágenes)
+2026-02-10 23:39:56 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Mini beast fc (1).pdf
+2026-02-10 23:39:56 - pdf_processor - INFO - Procesando equipo para PDF: Mini Galácticos (12 imágenes)
+2026-02-10 23:39:57 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Mini Galácticos.pdf
+2026-02-10 23:39:57 - pdf_processor - INFO - Procesando equipo para PDF: Ninjas (12 imágenes)
+2026-02-10 23:39:58 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Ninjas.pdf
+2026-02-10 23:39:58 - pdf_processor - INFO - Procesando equipo para PDF: Wild dogs (11 imágenes)
+2026-02-10 23:39:59 - pdf_processor - INFO - PDF generado: C:\Users\carlo\Downloads\timon2026\pdf_final\2018\Wild dogs.pdf
+2026-02-10 23:39:59 - pdf_processor - INFO - Generación de PDFs A4 finalizada.
+2026-02-10 23:39:59 - pdf_processor - INFO - Pipeline completado exitosamente.

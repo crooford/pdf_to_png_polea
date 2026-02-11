@@ -1,0 +1,2567 @@
+uuid: da18b402-b6f2-4543-9af8-0d5eb2c071c0
+langcode: es
+status: open
+dependencies:
+  module:
+    - webform_entity_handler
+    - webformnavigation
+third_party_settings:
+  webformnavigation:
+    forward_navigation: false
+    prevent_next_validation: 0
+    additional_error_message: ""
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: bandeja_de_entrada_anexos_param
+title: "Bandeja de entrada Anexos Parametrizador"
+description: '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(243, 244, 249);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:32.432px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"><strong>Bandeja de entrada Anexos Parametrizador contable</strong></span></p>'
+categories: {}
+elements: |-
+  processed_text:
+    '#type': processed_text
+    '#text': '<img style="display:none;" src="/sites/default/files/2025-01/loader.gif" alt="Fiduciaria Bogotá" width="50" height="50" id="loader_scorreo">'
+    '#format': full_html
+  row_01:
+    '#type': webform_flexbox
+    card_total_tramite:
+      '#type': processed_text
+      '#text': '<div class="card"><div class="card-top"><p>Trámites radicados sin gestionar</p><p>&nbsp;</p><img src="/sites/default/files/2025-09/parametrizar-aval.svg" width="32" height="32"></div><p><span>0</span></p><div class="card-botom"><p class="card-percenteje">0%</p><p>vs el mes anterior</p></div></div>'
+      '#format': full_html
+    card_total_tramite_2:
+      '#type': processed_text
+      '#text': '<div class="card"><div class="card-top"><p>Total de trámites en proceso</p><img src="/sites/default/files/2025-09/list-task.png" width="32" height="32"></div><p><span>0</span></p></div>'
+      '#format': full_html
+    card_total_tramite_3:
+      '#type': processed_text
+      '#text': '<div class="card"><div class="card-top"><p>Total de trámites finalizados</p><img src="/sites/default/files/2025-09/circle-check.svg" width="32" height="32"></div><p><span>0</span></p><div class="card-botom"><p class="card-percenteje">0%</p><p>vs el mes anterior</p></div></div>'
+      '#format': full_html
+    card_total_tramite_4:
+      '#type': processed_text
+      '#text': '<div class="card"><div class="card-top"><p>Total de trámites vencidos</p><img src="/sites/default/files/2025-09/alert-triangle.svg" width="32" height="32"></div><p><span>0</span></p></div>'
+      '#format': full_html
+  text_tramite:
+    '#type': processed_text
+    '#wrapper_attributes':
+      class:
+        - hidden
+    '#text': '<p>Consulte el listado de las tareas que requieren su atención:</p><p>Seleccione uno o varios registros para ejecutar una acción de forma masiva o para generar reporte con el botón correspondiente.</p>'
+    '#format': full_html
+  flexbox_actions:
+    '#type': webform_flexbox
+    select:
+      '#type': select
+      '#title': 'select estado'
+      '#title_display': none
+      '#options':
+        'En Inclusión/Eliminación correo/MT940': 'En Inclusión/Eliminación correo/MT940'
+        'Finalizada Inclusión/eliminación correo/MT940': 'Finalizada Inclusión/eliminación correo/MT940'
+        'Habilitación/inhabilitación servicio de envío de información solicitada': 'Habilitación/inhabilitación servicio de envío de información solicitada'
+        'Finalizada Marcación servicio Solicitado': 'Finalizada Marcación servicio Solicitado'
+      '#empty_option': 'Seleccione el nuevo Estado'
+      '#wrapper_attributes':
+        class:
+          - hidden
+    actions_02:
+      '#type': webform_actions
+      '#title': 'Confirmar acción'
+      '#attributes':
+        class:
+          - hidden
+      '#submit__label': 'Confirmar acción'
+      '#update_hide': true
+    generar_reporte2:
+      '#type': processed_text
+      '#text': '<p class="fidu-btn-cancelar"><button class="button--primary btn btn-primary" id="btnGenerarReporte">Generar Reporte</button></p>'
+      '#format': full_html
+  tabla:
+    '#type': webform_table
+    '#title': tabla
+    '#title_display': none
+    '#sticky': true
+    tabla_01:
+      '#type': webform_table_row
+      '#title': header_table
+      tabla_01_check_status:
+        '#type': checkbox
+        '#title': check_status
+        '#title_display': none
+      tabla_01_prioridad:
+        '#type': label
+        '#title': Prioridad
+      tabla_01_fecha_solicitud:
+        '#type': label
+        '#title': 'Fecha solicitud'
+      tabla_01_numero_de_solicitud:
+        '#type': label
+        '#title': 'Número de solicitud'
+      tabla_01_nit_constructora:
+        '#type': label
+        '#title': 'NIT Constructora'
+      tabla_01_nombre_constructora:
+        '#type': label
+        '#title': 'Nombre Constructora'
+      tabla_01_numero_y_nombre_de_negocio:
+        '#type': label
+        '#title': 'Número y Nombre de negocio'
+      tabla_01_tipo_anexo:
+        '#type': label
+        '#title': 'Tipo anexo'
+      tabla_01_municipio:
+        '#type': label
+        '#title': Municipio
+      tabla_01_estado:
+        '#type': label
+        '#title': Estado
+      tabla_01_asignado_a:
+        '#type': label
+        '#title': 'Asignado a'
+      tabla_01_detalle:
+        '#type': label
+        '#title': Detalle
+    tabla_02:
+      '#type': webform_table_row
+      '#title': table_row
+      '#attributes':
+        class:
+          - hidden
+      tabla_02_check_status:
+        '#type': checkbox
+        '#title': check_status
+        '#title_display': none
+      prioridad:
+        '#type': textfield
+        '#title': prioridad
+        '#title_display': none
+      fecha_solicitud:
+        '#type': textfield
+        '#title': fecha_solicitud
+        '#title_display': none
+      numero_de_solicitud:
+        '#type': textfield
+        '#title': numero_de_solicitud
+        '#title_display': none
+      nit_constructora:
+        '#type': textfield
+        '#title': nit_constructora
+        '#title_display': none
+      nombre_constructora:
+        '#type': textfield
+        '#title': nombre_constructora
+        '#title_display': none
+      numero_y_nombre_de_negocio:
+        '#type': textfield
+        '#title': numero_y_nombre_de_negocio
+        '#title_display': none
+      tipo_anexo:
+        '#type': textfield
+        '#title': tipo_anexo
+        '#title_display': none
+      municipio:
+        '#type': textfield
+        '#title': municipio
+        '#title_display': none
+      estado:
+        '#type': textfield
+        '#title': estado
+        '#title_display': none
+      nombre_asignacion:
+        '#type': textfield
+        '#title': nombre_asignacion
+        '#title_display': none
+      icono_ver:
+        '#type': processed_text
+        '#text': '<img src="/sites/default/files/2024-11/eye-solid.svg" alt="icon" width="24" height="24">'
+        '#format': full_html
+  business_data:
+    '#type': webform_computed_twig
+    '#title': business_data
+    '#wrapper_attributes':
+      class:
+        - hidden
+    '#display_on': form
+    '#template': "{{drupal_view('funcionario_anexos_data','rest_export_nested_2')}}"
+    '#whitespace': trim
+    '#ajax': true
+  historico_data:
+    '#type': webform_computed_twig
+    '#title': historico_data
+    '#wrapper_attributes':
+      class:
+        - hidden
+    '#display_on': form
+    '#template': "{{ drupal_view('funcionario_anexos_data','rest_export_nested_3')  }}"
+    '#whitespace': trim
+    '#ajax': true
+  data_funcionario:
+    '#type': hidden
+    '#title': data_funcionario
+    '#default_value': '[webform:handler:filtro_radicado:completed:raw_body]'
+  data_estado:
+    '#type': hidden
+    '#title': data_estado
+    '#default_value': '[webform:handler:filtro_radicado_1:completed:raw_body]'
+  radicado_detalle:
+    '#type': hidden
+    '#title': Radicado_detalle
+  fecha_1:
+    '#type': hidden
+    '#title': fecha_1
+  case_id_1:
+    '#type': hidden
+    '#title': case_id_1
+  task_id:
+    '#type': hidden
+    '#title': task_id
+    '#default_value': '[webform:handler:find_task0:completed:0:id]'
+  task_id2:
+    '#type': hidden
+    '#title': task_id2
+    '#default_value': '[webform:handler:find_task2:completed:0:id]'
+  task_id3:
+    '#type': hidden
+    '#title': task_id3
+    '#default_value': '[webform:handler:find_task3:completed:0:id]'
+  task_id4:
+    '#type': hidden
+    '#title': task_id4
+    '#default_value': '[webform:handler:find_task4:completed:0:id]'
+  task_id5:
+    '#type': hidden
+    '#title': task_id5
+    '#default_value': '[webform:handler:find_task5:completed:0:id]'
+  product_data_msg:
+    '#type': hidden
+    '#title': product_data_msg
+    '#default_value': '[webform:handler:find_var:completed:0:name]'
+  radicado_2_1:
+    '#type': hidden
+    '#title': Radicado_2_1
+  estado_1:
+    '#type': hidden
+    '#title': estado_1
+  correo_1:
+    '#type': hidden
+    '#title': correo_1
+  mt940_1:
+    '#type': hidden
+    '#title': mt940_1
+  fecha_2:
+    '#type': hidden
+    '#title': fecha_2
+  case_id_2:
+    '#type': hidden
+    '#title': case_id_2
+  task_id_2:
+    '#type': hidden
+    '#title': task_id_2
+    '#default_value': '[webform:handler:find_task0_2:completed:0:id]'
+  task_id2_2:
+    '#type': hidden
+    '#title': task_id2_2
+    '#default_value': '[webform:handler:find_task2_2:completed:0:id]'
+  task_id3_2:
+    '#type': hidden
+    '#title': task_id3_2
+    '#default_value': '[webform:handler:find_task3_2:completed:0:id]'
+  task_id4_2:
+    '#type': hidden
+    '#title': task_id4_2
+    '#default_value': '[webform:handler:find_task4_2:completed:0:id]'
+  task_id5_2:
+    '#type': hidden
+    '#title': task_id5_2
+    '#default_value': '[webform:handler:find_task5_2:completed:0:id]'
+  radicado_2_2:
+    '#type': hidden
+    '#title': Radicado_2_2
+  estado_2:
+    '#type': hidden
+    '#title': estado_2
+  correo_2:
+    '#type': hidden
+    '#title': correo_2
+  mt940_2:
+    '#type': hidden
+    '#title': mt940_2
+  fecha_3:
+    '#type': hidden
+    '#title': fecha_3
+  case_id_3:
+    '#type': hidden
+    '#title': case_id_3
+  task_id_3:
+    '#type': hidden
+    '#title': task_id_3
+    '#default_value': '[webform:handler:find_task0_3:completed:0:id]'
+  task_id2_3:
+    '#type': hidden
+    '#title': task_id2_3
+    '#default_value': '[webform:handler:find_task2_3:completed:0:id]'
+  task_id3_3:
+    '#type': hidden
+    '#title': task_id3_3
+    '#default_value': '[webform:handler:find_task3_3:completed:0:id]'
+  task_id4_3:
+    '#type': hidden
+    '#title': task_id4_3
+    '#default_value': '[webform:handler:find_task4_3:completed:0:id]'
+  task_id5_3:
+    '#type': hidden
+    '#title': task_id5_3
+    '#default_value': '[webform:handler:find_task5_3:completed:0:id]'
+  radicado_2_3:
+    '#type': hidden
+    '#title': Radicado_2_3
+  estado_3:
+    '#type': hidden
+    '#title': estado_3
+  correo_3:
+    '#type': hidden
+    '#title': correo_3
+  mt940_3:
+    '#type': hidden
+    '#title': mt940_3
+  fecha_4:
+    '#type': hidden
+    '#title': fecha_4
+  case_id_4:
+    '#type': hidden
+    '#title': case_id_4
+  task_id_4:
+    '#type': hidden
+    '#title': task_id_4
+    '#default_value': '[webform:handler:find_task0_cuarto_registro:completed:0:id]'
+  task_id2_4:
+    '#type': hidden
+    '#title': task_id2_4
+    '#default_value': '[webform:handler:find_task2_4:completed:0:id]'
+  task_id3_4:
+    '#type': hidden
+    '#title': task_id3_4
+    '#default_value': '[webform:handler:find_task3_4:completed:0:id]'
+  task_id4_4:
+    '#type': hidden
+    '#title': task_id4_4
+    '#default_value': '[webform:handler:find_task4_4:completed:0:id]'
+  task_id5_4:
+    '#type': hidden
+    '#title': task_id5_4
+    '#default_value': '[webform:handler:find_task5_4:completed:0:id]'
+  radicado_2_4:
+    '#type': hidden
+    '#title': Radicado_2_4
+  estado_4:
+    '#type': hidden
+    '#title': estado_4
+  correo_4:
+    '#type': hidden
+    '#title': correo_4
+  mt940_4:
+    '#type': hidden
+    '#title': mt940_4
+  fecha_5:
+    '#type': hidden
+    '#title': fecha_5
+  case_id_5:
+    '#type': hidden
+    '#title': case_id_5
+  task_id_5:
+    '#type': hidden
+    '#title': task_id_5
+    '#default_value': '[webform:handler:find_task0_quinto_registro:completed:0:id]'
+  task_id2_5:
+    '#type': hidden
+    '#title': task_id2_5
+    '#default_value': '[webform:handler:find_task2_5:completed:0:id]'
+  task_id3_5:
+    '#type': hidden
+    '#title': task_id3_5
+    '#default_value': '[webform:handler:find_task3_5:completed:0:id]'
+  task_id4_5:
+    '#type': hidden
+    '#title': task_id4_5
+    '#default_value': '[webform:handler:find_task4_5:completed:0:id]'
+  task_id5_5:
+    '#type': hidden
+    '#title': task_id5_5
+    '#default_value': '[webform:handler:find_task5_5:completed:0:id]'
+  radicado_2_5:
+    '#type': hidden
+    '#title': Radicado_2_5
+  estado_5:
+    '#type': hidden
+    '#title': estado_5
+  correo_5:
+    '#type': hidden
+    '#title': correo_5
+  mt940_5:
+    '#type': hidden
+    '#title': mt940_5
+  fecha_6:
+    '#type': hidden
+    '#title': fecha_6
+  case_id_6:
+    '#type': hidden
+    '#title': case_id_6
+  task_id_6:
+    '#type': hidden
+    '#title': task_id_6
+    '#default_value': '[webform:handler:find_task0_sexto_registro:completed:0:id]'
+  task_id2_6:
+    '#type': hidden
+    '#title': task_id2_6
+    '#default_value': '[webform:handler:find_task2_6:completed:0:id]'
+  task_id3_6:
+    '#type': hidden
+    '#title': task_id3_6
+    '#default_value': '[webform:handler:find_task3_6:completed:0:id]'
+  task_id4_6:
+    '#type': hidden
+    '#title': task_id4_6
+    '#default_value': '[webform:handler:find_task4_6:completed:0:id]'
+  task_id5_6:
+    '#type': hidden
+    '#title': task_id5_6
+    '#default_value': '[webform:handler:find_task5_6:completed:0:id]'
+  radicado_2_6:
+    '#type': hidden
+    '#title': Radicado_2_6
+  estado_6:
+    '#type': hidden
+    '#title': estado_6
+  correo_6:
+    '#type': hidden
+    '#title': correo_6
+  mt940_6:
+    '#type': hidden
+    '#title': mt940_6
+  fecha_7:
+    '#type': hidden
+    '#title': fecha_7
+  case_id_7:
+    '#type': hidden
+    '#title': case_id_7
+  task_id_7:
+    '#type': hidden
+    '#title': task_id_7
+    '#default_value': '[webform:handler:find_task0_sexto_registro_1:completed:0:id]'
+  task_id2_7:
+    '#type': hidden
+    '#title': task_id2_7
+    '#default_value': '[webform:handler:find_task2_7:completed:0:id]'
+  task_id3_7:
+    '#type': hidden
+    '#title': task_id3_7
+    '#default_value': '[webform:handler:find_task3_7:completed:0:id]'
+  task_id4_7:
+    '#type': hidden
+    '#title': task_id4_7
+    '#default_value': '[webform:handler:find_task4_7:completed:0:id]'
+  task_id5_7:
+    '#type': hidden
+    '#title': task_id5_7
+    '#default_value': '[webform:handler:find_task5_7:completed:0:id]'
+  radicado_2_7:
+    '#type': hidden
+    '#title': Radicado_2_7
+  estado_7:
+    '#type': hidden
+    '#title': estado_7
+  correo_7:
+    '#type': hidden
+    '#title': correo_7
+  mt940_7:
+    '#type': hidden
+    '#title': mt940_7
+  fecha_8:
+    '#type': hidden
+    '#title': fecha_8
+  case_id_8:
+    '#type': hidden
+    '#title': case_id_8
+  task_id_8:
+    '#type': hidden
+    '#title': task_id_8
+    '#default_value': '[webform:handler:find_task0_septimo_registro:completed:0:id]'
+  task_id2_8:
+    '#type': hidden
+    '#title': task_id2_8
+    '#default_value': '[webform:handler:find_task2_8:completed:0:id]'
+  task_id3_8:
+    '#type': hidden
+    '#title': task_id3_8
+    '#default_value': '[webform:handler:find_task3_8:completed:0:id]'
+  task_id4_8:
+    '#type': hidden
+    '#title': task_id4_8
+    '#default_value': '[webform:handler:find_task4_8:completed:0:id]'
+  task_id5_8:
+    '#type': hidden
+    '#title': task_id5_8
+    '#default_value': '[webform:handler:find_task5_8:completed:0:id]'
+  radicado_2_8:
+    '#type': hidden
+    '#title': Radicado_2_8
+  estado_8:
+    '#type': hidden
+    '#title': estado_8
+  correo_8:
+    '#type': hidden
+    '#title': correo_8
+  mt940_8:
+    '#type': hidden
+    '#title': mt940_8
+  fecha_9:
+    '#type': hidden
+    '#title': fecha_9
+  case_id_9:
+    '#type': hidden
+    '#title': case_id_9
+  task_id_9:
+    '#type': hidden
+    '#title': task_id_9
+    '#default_value': '[webform:handler:find_task0_octavo_registro:completed:0:id]'
+  task_id2_9:
+    '#type': hidden
+    '#title': task_id2_9
+    '#default_value': '[webform:handler:find_task2_9:completed:0:id]'
+  task_id3_9:
+    '#type': hidden
+    '#title': task_id3_9
+    '#default_value': '[webform:handler:find_task3_9:completed:0:id]'
+  task_id4_9:
+    '#type': hidden
+    '#title': task_id4_9
+    '#default_value': '[webform:handler:find_task4_9:completed:0:id]'
+  task_id5_9:
+    '#type': hidden
+    '#title': task_id5_9
+    '#default_value': '[webform:handler:find_task5_9:completed:0:id]'
+  radicado_2_9:
+    '#type': hidden
+    '#title': Radicado_2_9
+  estado_9:
+    '#type': hidden
+    '#title': estado_9
+  correo_9:
+    '#type': hidden
+    '#title': correo_9
+  mt940_9:
+    '#type': hidden
+    '#title': mt940_9
+  fecha_10:
+    '#type': hidden
+    '#title': fecha_10
+  case_id_10:
+    '#type': hidden
+    '#title': case_id_10
+  task_id_10:
+    '#type': hidden
+    '#title': task_id_10
+    '#default_value': '[webform:handler:find_task0_noveno_registro:completed:0:id]'
+  task_id2_10:
+    '#type': hidden
+    '#title': task_id2_10
+    '#default_value': '[webform:handler:find_task2_10:completed:0:id]'
+  task_id3_10:
+    '#type': hidden
+    '#title': task_id3_10
+    '#default_value': '[webform:handler:find_task3_10:completed:0:id]'
+  task_id4_10:
+    '#type': hidden
+    '#title': task_id4_10
+    '#default_value': '[webform:handler:find_task4_10:completed:0:id]'
+  task_id5_10:
+    '#type': hidden
+    '#title': task_id5_10
+    '#default_value': '[webform:handler:find_task5_10:completed:0:id]'
+  radicado_2_10:
+    '#type': hidden
+    '#title': Radicado_2_10
+  estado_10:
+    '#type': hidden
+    '#title': estado_10
+  correo_10:
+    '#type': hidden
+    '#title': correo_10
+  mt940_10:
+    '#type': hidden
+    '#title': mt940_10
+  persistence_id:
+    '#type': hidden
+    '#title': persistenceId
+  archivos:
+    '#type': hidden
+    '#title': archivos
+    '#default_value': '[webform:handler:documentos:completed:raw_body]'
+  archivos_onbase:
+    '#type': hidden
+    '#title': archivos_onbase
+    '#default_value': '[webform:handler:listado_onbase:completed:raw_body]'
+  actions_03:
+    '#type': webform_actions
+    '#title': Detalle
+    '#submit__label': Detalle
+    '#update_hide': true
+css: |
+  #pagination {
+      display: flex;
+      /*justify-content: flex-end; Alinea a la derecha */
+      margin-top: 1rem; /* Espaciado superior */
+      gap: 0.5rem; /* Espaciado entre botones */
+  }
+  #edit-tabla-02-ico-detalle {
+     cursor: pointer; 
+  }
+
+  .td-caducada {
+      background-color: #ffcccc !important; /* Rojo claro */
+      border-radius: 10px; /* Bordes redondeados */
+      padding: 5px 10px;
+      display: inline-block; /* Ajusta el tamaño del fondo al texto */
+  }
+
+  .inputFilter{
+  border-radius: 12px !important;
+  padding: 8px 12px !important;
+  }
+javascript: |-
+  let currentPage = 1; // Página actual
+  const rowsPerPage = 10; // Número de filas por página
+  let data = [];
+  let checkeds = [] // alamcena los id de los checks seleccionados
+  let sortDirection = {}; // Objeto para almacenar el estado de orden asc/desc
+  let selectedData = []; //almacena los registros seleccionados 
+  let filteredData = []; // Nueva variable global para almacenar los datos filtrados
+  let filteredData_cards = []; // Nueva variable global para almacenar los datos filtrados para cards
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+      const container = document.querySelector("[data-drupal-selector='edit-flexbox-actions']");
+      let selectEstado = document.querySelector("[data-drupal-selector='edit-select']").closest(".webform-flex");
+      const confirmButtonDiv = document.querySelector("[data-drupal-selector='edit-actions-02']");
+      const btnConfirm = document.getElementById("edit-actions-02-submit")
+      btnConfirm.textContent = 'Cambiar estado';
+      //btnConfirm.disabled = true
+      const estadoSelect = document.querySelector("[data-drupal-selector='edit-select']");
+      const tableRows = document.querySelectorAll("table tbody tr");
+
+      // crear el contenedor de los paginas
+      const paginationDiv = document.createElement("div");
+      paginationDiv.id = "pagination";
+      const tabla = document.querySelector("#edit-tabla"); // Seleccionar la tabla
+      tabla.after(paginationDiv);
+
+      //envolver el encabezado en un thead
+      const tbody = tabla.querySelector("tbody");
+      const encabezado = tbody.querySelector("tr"); // Seleccionar la fila del encabezado
+      if (encabezado) {
+          let thead = tabla.querySelector("thead");
+          // Crear <thead> si no existe
+          if (!thead) {
+              thead = document.createElement("thead");
+              tabla.insertBefore(thead, tbody);
+          }
+          // Mover la fila del encabezado al <thead>
+          thead.appendChild(encabezado);
+      }
+
+      // Agregar inputs debajo de los textos en el thead para filtrar
+      const tablaHead = tabla.querySelector("thead");
+      const headers = tablaHead.querySelectorAll("td");
+
+      // Crear una nueva fila para los inputs de filtrado
+      const filterRow = document.createElement("tr");
+      headers.forEach((header, index) => {
+          const filterCell = document.createElement("td");
+          if (index !== 0 && index !== 1 && index != 11) { // Omitimos el primer <th> (el que contiene el checkbox)
+              const input = document.createElement("input");
+              input.type = "text";
+              //input.placeholder = `Filtrar ${header.textContent.trim()}`;
+              input.placeholder = `Filtro`;
+              input.id = `filter-${header.textContent.trim().toLowerCase().replace(/\s+/g, '')}`;
+              input.classList.add("inputFilter");
+              input.style.width = "100%";  // Establecer un tamaño más pequeño
+              input.style.fontSize = "16px"; // Establecer tamaño de fuente más pequeño
+              input.style.padding = "5px"; // Reducir el padding
+              //header.appendChild(input); // Agregar el input debajo del texto
+              filterCell.appendChild(input);
+          }
+
+          filterRow.appendChild(filterCell);
+
+          // Asignar data-key según la posición del encabezado
+          const keys = [
+              null, // El primer <td> no tiene data-key (checkbox)
+              null,
+              "fechaSolicitud",
+              "codigoRadicado",
+              "tipoDocumento",
+              "solicitante",
+              "nombreNegocio",
+              "numeroAnexoContable",
+              "municipio",
+              "estado",
+              "asignadoNombre",
+              null // El último <td> tampoco tiene data-key (acciones)
+          ];
+          if (keys[index]) {
+              header.setAttribute("data-key", keys[index]);
+          }
+      });
+
+      // Agregar la fila de filtros al thead
+      tablaHead.appendChild(filterRow);
+
+      //const inputPrioridad = document.querySelector("#filter-prioridad")
+      const inputFecha = document.querySelector("#filter-fechasolicitud")
+      const inputSolicitud = document.querySelector("#filter-númerodesolicitud")
+      const inputDocumento = document.querySelector("#filter-nitconstructora")
+      const inputNombre = document.querySelector("#filter-nombreconstructora")
+      const inputNegocio = document.querySelector("#filter-númeroynombredenegocio")
+      const inputMunicipio = document.querySelector("#filter-municipio")
+      const inputTipoAnexo = document.querySelector("#filter-tipoanexo")
+      const inputEstado = document.querySelector("#filter-estado")
+      const inputAsignado = document.querySelector("#filter-asignadoa")
+
+
+      const inputs = [inputFecha, inputSolicitud, inputDocumento, inputNombre, inputNegocio, inputTipoAnexo, inputMunicipio, inputEstado, inputAsignado]
+
+      function optionsEstado(checks = '') {
+          if (checks.length > 0) {
+
+              estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+        option[value='Finalizada Inclusión/eliminación correo/MT940'],
+        option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+        option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = false);
+
+              const checkId = checks[checks.length - 1];
+              const estado_row = selectedData.filter(row => row.persistenceId == checkId)[0].estado;
+              console.log(estado_row.toLowerCase());
+
+
+              switch (estado_row.toLowerCase()) {
+                  case 'radicado':
+                  case 'devuelto para corrección':
+                      estadoSelect.querySelectorAll(`option[value='Finalizada Inclusión/eliminación correo/MT940'], 
+            option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+            option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = true);
+                      break;
+                  case 'en inclusión/eliminación correo/mt940':
+                      estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+            option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+            option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = true);
+                      break;
+                  case 'finalizada inclusión/eliminación correo/mt940':
+                      estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+            option[value='Finalizada Inclusión/eliminación correo/MT940'],
+            option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = true);
+                      break;
+                  case 'habilitación/inhabilitación servicio de envío de información solicitada':
+                      estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+            option[value='Finalizada Inclusión/eliminación correo/MT940'],
+            option[value='Habilitación/inhabilitación servicio de envío de información solicitada']`).forEach(option => option.disabled = true);
+                      break;
+                  case 'finalizada marcación servicio solicitado':
+                  case 'finalizado marcacion servicio solicitado':
+                      estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+            option[value='Finalizada Inclusión/eliminación correo/MT940'],
+            option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+            option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = true);
+                      break;
+
+
+                  default:
+                      estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+            option[value='Finalizada Inclusión/eliminación correo/MT940'],
+            option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+            option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = false);
+                      break;
+              }
+          } else {
+              estadoSelect.querySelectorAll(`option[value='En Inclusión/Eliminación correo/MT940'], 
+              option[value='Finalizada Inclusión/eliminación correo/MT940'],
+              option[value='Habilitación/inhabilitación servicio de envío de información solicitada'],
+              option[value='Finalizada Marcación servicio Solicitado']`).forEach(option => option.disabled = false);
+          }
+      }
+
+      function checkInputs() {
+          // Verifica si el input tiene un valor
+          const filled = inputEstado.value.trim() !== '';
+          btnConfirm.disabled = !filled; // Habilita si tiene un valor
+
+          if (!filled) {
+              optionsEstado('');
+          }
+      }
+      // Agregar evento 'input' a cada campo para detectar cambios
+      inputs.forEach(input => {
+          input.addEventListener('input', checkInputs);
+      });
+
+      // Llamar a la función al inicio para verificar el estado del botón
+      checkInputs();
+
+      const business_data = document.getElementsByName('business_data')[0]
+      if (business_data) {
+          data = JSON.parse(business_data.value)[0].var;
+
+          console.log("business_data", data)
+
+          // Filtrar la data
+          //data = data.filter(row =>
+          //    !(
+          //        row.estado === "Devuelto para corrección" ||
+          //        row.estado === "Cancelada" ||
+          //        row.estado === "Finalizada"
+          //    )
+          //);
+
+  fetch('/user/peoples/id?_format=json')
+    .then(response => response.json())
+    .then(data2 => {
+      const fieldId = data2[0].field_id;
+      console.log("field_id:", fieldId);
+
+  //////////////////////
+
+      // Filtrar por estado o asignadoId
+  //    data = data.filter(row =>
+  //      (row.estado === "Radicado") ||
+  //      (row.estado === "En validación contable") ||
+  //      (row.estado === "En aprobación Contable") ||
+  //      (row.estado === "Contabilizado") ||
+  //      (row.estado === "Devuelto para corregir") ||
+  //      (row.estado === "Cancelada") ||
+  //      (row.estado === "En trámite área gestión") ||      
+  //      (row.estado === "Finalizada")          
+  //    );
+      
+  /////////////////
+
+
+      // Cambiar el valor de tipoDocumento
+      data = data.map(row => {
+        if (row.tipoDocumento === "A") {
+          return { ...row, tipoDocumento: "NIT" };
+        }
+        return row;
+      });
+
+
+      filteredData = data;
+
+      console.log("data filtrada con field_id:", data);
+      renderTable(data); // Se renderiza sólo después de filtrar
+    });
+      } else {
+          console.log("array vacio")
+      }
+
+      // Marca o desmarca según el estado del checkbox principal
+      document.getElementById("edit-tabla-01-check-status").addEventListener("change", function () {
+          const checkboxes = document.querySelectorAll(".checkSolicitud"); // Selecciona todos los checkboxes de la tabla
+          checkboxes.forEach(checkbox => {
+              checkbox.checked = this.checked; // Marca o desmarca
+
+              if (checkbox.checked) { // Si se marca, se agrega al array si no está
+                  if (!checkeds.includes(checkbox.id)) {
+                      checkeds.push(checkbox.id);
+                  }
+                  checkbox.dispatchEvent(new Event("change")); // Dispara el evento change manualmente
+              } else { // Si se desmarca, se elimina del array
+                  const index = checkeds.indexOf(checkbox.id);
+                  if (index > -1) {
+                      checkeds.splice(index, 1);
+                  }
+                  console.log(checkeds)
+              }
+          });
+
+          if (checkeds.length > 0) {
+              const allFilled = inputs.some(input => input.value.trim() !== '');
+              optionsEstado(!allFilled ? '' : checkeds)
+          } else {
+              optionsEstado('')
+          }
+      });
+
+
+      // Escucha de eventos en los checkboxes individuales
+      document.querySelector("#edit-tabla").addEventListener("change", function (e) {
+          if (e.target && e.target.classList.contains("checkSolicitud")) {
+              const checkbox = e.target;
+              const checkboxId = checkbox.id;
+
+              if (checkbox.checked) {
+                  // Agregar el ID al array si no está
+                  if (!checkeds.includes(checkboxId)) {
+                      checkeds.push(checkboxId);
+                  }
+              } else {
+                  // Eliminar el ID del array si se desmarca
+                  const index = checkeds.indexOf(checkboxId);
+                  if (index > -1) {
+                      checkeds.splice(index, 1);
+                  }
+                  console.log(checkeds)
+              }
+          }
+
+          if (checkeds.length > 0) {
+              const allFilled = inputs.some(input => input.value.trim() !== '');
+              optionsEstado(!allFilled ? '' : checkeds)
+          } else {
+              optionsEstado('')
+          }
+      });
+
+
+      // Filtrar los datos según los valores ingresados en los campos de filtro
+      document.querySelectorAll(".inputFilter").forEach(input => {
+          input.addEventListener("keyup", filterTable);
+      });
+
+      // Agregar funcionalidad de ordenamiento
+      headers.forEach((header, index) => {
+          if (index !== 0 && index !== 1 && index != 11) {
+              const key = header.dataset.key; // Asumimos que los headers tienen data-key asociado al atributo del objeto
+              if (key) {
+                  header.style.cursor = "pointer";
+                  header.addEventListener("click", () => sortTableByKey(key, index, header));
+              }
+          }
+      });
+
+      // Ordenar por fecha después de cargar los datos
+      if (data.length > 0) {
+          const fechaHeader = Array.from(headers).find(header => header.dataset.key === "fechaSolicitud");
+          if (fechaHeader) {
+              sortTableByKey("fechaSolicitud", Array.from(headers).indexOf(fechaHeader), fechaHeader);
+          }
+      }
+
+  });
+
+  function renderTable(dataToRender = filteredData, page = 1) {
+      const tabla = document.getElementById("edit-tabla");
+      const tablaBody = tabla.querySelector("tbody");
+
+      tablaBody.innerHTML = ""; // Limpiar filas existentes
+      document.getElementById("edit-tabla-01-check-status").checked = false; // iniciamos el check desmarcado
+
+      const start = (page - 1) * rowsPerPage;
+      const end = start + rowsPerPage;
+      const paginatedData = dataToRender.slice(start, end);
+
+      // Mapeo de nombres para el campo "tramite"
+      const tramiteMap = {
+          "Solicitud_Correos": "Inclusión/Eliminación correo"
+      };
+
+      paginatedData.forEach((row, index) => {
+          const isChecked = checkeds.some(check => check.id == row.persistenceId);
+          const fila = document.createElement("tr");
+
+          const tramiteModificado = tramiteMap[row.tramite.trim()] || row.tramite;
+          const LineaNegocioModificado = (row.lineaNegocio === "INVERSION" || row.lineaNegocio === "Linea de inversión") ? "Inversión" : row.lineaNegocio;
+
+        let Asignado_a = row.analistaGestionNameAnexos ? row.analistaGestionNameAnexos : "Sin asignar"; 
+
+      if(row.estado != "En trámite área gestión"){ 
+          console.log('in En trámite área gestión', Asignado_a)
+          Asignado_a = row.asignadoNombre ? row.asignadoNombre : "Sin asignar"; }
+
+          fila.innerHTML = `
+          <td>
+              <input type="checkbox" 
+                  id="${row.persistenceId}" 
+                  class="form-checkbox form-check-input checkSolicitud" 
+                  ${isChecked ? "checked" : ""} 
+                  data-fecha-solicitud="${row.fechaSolicitud}" 
+                  data-case-id="${row.caseId}" 
+                  data-radicado-id="${row.codigoRadicado}" 
+                  data-estado-id="${row.estado}"
+                  data-correo-id="${row.correo}"
+                  data-mt940-id="${row.mt940}"
+                  data-index="${index + 1}">
+          </td>
+          <td style="width: 40px; text-align: center;">
+              ${row.priorizar ? '<img src="/sites/default/files/2025-09/star-aval.svg" alt="Prioritario" width="25" height="25">' : ''}
+          </td>
+          <td class="${row.tareaCaducada === true ? "td-caducada" : ""}">
+              ${new Date(row.fechaSolicitud).toLocaleDateString()}
+          </td>
+          <td>${row.codigoRadicado}</td>
+          <td>${row.tipoDocumento}${row.numeroDocumento}</td>
+          <td>${row.nombreAutorizado}</td>
+          <td>${row.nombreNegocio}</td>
+          <td>${row.numeroAnexoContable}</td>
+          <td>${row.municipio}</td>
+          <td>${row.estado}</td>
+          <td>${Asignado_a}</td>
+              <td>
+                  <div id="edit-tabla-02-ico-detalle" class="js-form-item js-form-type-processed-text form-type-processed-text js-form-item- form-item- form-no-label mb-3" style="border: none; background: none>
+                      <button type="button" onclick="verDetalle(${row.persistenceId}, '${row.codigoRadicado}')">
+                          <img src="/sites/default/files/2025-09/eye-aval.svg" width="25" height="25" loading="lazy">
+                      </button>
+                  </div>
+              </td>
+      `;
+
+          tablaBody.appendChild(fila);
+      });
+      
+
+
+
+      document.querySelectorAll(".checkSolicitud").forEach(checkbox => {
+          checkbox.addEventListener("change", function () {
+              const index = this.getAttribute("data-index"); // Obtiene el índice (1-10)
+              if (this.checked) {
+                  cambioEstado(index, this.getAttribute("data-fecha-solicitud"),
+                      this.getAttribute("data-case-id"),
+                      this.getAttribute("data-radicado-id"),
+                      this.getAttribute("data-estado-id"),
+                      this.getAttribute("data-correo-id"),
+                      this.getAttribute("data-mt940-id"));
+              } else {
+                  //Aqui se eliminan los registros de los datos del reporte
+                  const dataClearFilter = selectedData.filter(i => i.caseId != this.getAttribute("data-case-id"))
+                  selectedData = dataClearFilter
+                  cambioEstadoDesmarcado(index) //limpiar inputs hidden
+              }
+          });
+      });
+
+
+      function cambioEstado(index, fechaSolicitud, caseId, codigoRadicado, estado, correo, mt940) {
+          // Busca los campos ocultos según el índice
+          const fecha = document.getElementsByName(`fecha_${index}`)[0];
+          const case_id = document.getElementsByName(`case_id_${index}`)[0];
+          const radicadoField = document.getElementsByName(`radicado_2_${index}`)[0];
+          const estados = document.getElementsByName(`estado_${index}`)[0];
+          const correos = document.getElementsByName(`correo_${index}`)[0];
+          const mt940s = document.getElementsByName(`mt940_${index}`)[0];
+
+          if (fecha) fecha.value = fechaSolicitud;
+          if (case_id) case_id.value = caseId;
+          if (radicadoField) radicadoField.value = codigoRadicado;
+          if (estados) estados.value = estado;
+          if (correos) correos.value = correo;
+          if (mt940s) mt940s.value = mt940;
+
+          //Aqui se agregaan los registros a los datos del reporte
+          selectedData.push(data.find(i => i.caseId == caseId))
+          console.log(`Datos del registro ${index} actualizados:`, { fechaSolicitud, caseId, codigoRadicado, estado, correo, mt940 });
+      }
+
+      function cambioEstadoDesmarcado(index) {
+          console.log('index: ' + index)
+          document.getElementsByName(`fecha_${index}`)[0].value = '';
+          document.getElementsByName(`case_id_${index}`)[0].value = '';
+          document.getElementsByName(`radicado_2_${index}`)[0].value = '';
+          document.getElementsByName(`estado_${index}`)[0].value = '';
+          document.getElementsByName(`correo_${index}`)[0].value = '';
+          document.getElementsByName(`mt940_${index}`)[0].value = '';
+          console.log(selectedData);
+      }
+
+
+      // Inicializa el paginador
+      renderPagination(dataToRender.length);
+  }
+
+
+  //function cambioEstado() { 
+  // Busca los campos ocultos según el índice
+  //    checkeds.forEach(element => {    
+  //        const { index, fechaSolicitud, caseId, codigoRadicado, estado, correo, mt940 } = element 
+  //        const fecha = document.getElementsByName(`fecha_${index}`)[0];
+  //        const case_id = document.getElementsByName(`case_id_${index}`)[0];
+  //        const radicadoField = document.getElementsByName(`radicado_2_${index}`)[0];
+  //        const estados = document.getElementsByName(`estado_${index}`)[0];
+  //        const correos = document.getElementsByName(`correo_${index}`)[0];
+  //        const mt940s = document.getElementsByName(`mt940_${index}`)[0];
+
+  //        if (fecha) fecha.value = fechaSolicitud;
+  //        if (case_id) case_id.value = caseId;
+  //        if (radicadoField) radicadoField.value = codigoRadicado;
+  //        if (estados) estados.value = estado;
+  //        if (correos) correos.value = correo;
+  //        if (mt940s) mt940s.value = mt940;
+  //        console.log(`Datos del registro ${index} actualizados:`, { fechaSolicitud, caseId, codigoRadicado, estado, correo, mt940 });
+  //    });
+  //}
+
+  function sortTableByKey(key, columnIndex, header) {
+      // Determinar dirección de orden
+      const direction = sortDirection[key] === "asc" ? "desc" : "asc";
+      sortDirection[key] = direction;
+      selectedData = [];
+
+      // Ordenar datos
+      filteredData.sort((a, b) => {
+          if (key == 'tipoDocumento') {
+              const valueA = a.tipoDocumento + a.numeroDocumento;
+              const valueB = b.tipoDocumento + b.numeroDocumento;
+
+              if (typeof valueA === "string") {
+                  return direction === "asc"
+                      ? valueA.localeCompare(valueB)
+                      : valueB.localeCompare(valueA);
+              } else if (typeof valueA === "number" || valueA instanceof Date) {
+                  return direction === "asc" ? valueA - valueB : valueB - valueA;
+              }
+
+          } else {
+              if(key == 'solicitante'){
+                  const valueA = a.nombreAutorizado;
+                  const valueB = b.nombreAutorizado;
+          
+                  if (typeof valueA === "string") {
+                      return direction === "asc"
+                          ? valueA.localeCompare(valueB)
+                          : valueB.localeCompare(valueA);
+                  } else if (typeof valueA === "number" || valueA instanceof Date) {
+                      return direction === "asc" ? valueA - valueB : valueB - valueA;
+                  }
+              }else{
+                  const valueA = a[key];
+                  const valueB = b[key];
+                  if (typeof valueA === "string") {
+                      return direction === "asc"
+                          ? valueA.localeCompare(valueB)
+                          : valueB.localeCompare(valueA);
+                  } else if (typeof valueA === "number" || valueA instanceof Date) {
+                      return direction === "asc" ? valueA - valueB : valueB - valueA;
+                  }
+              }
+          }
+          return 0;
+      });
+
+      // Actualizar visualización del encabezado
+      const headersTo = document.querySelectorAll("#edit-tabla thead tr td");
+      headersTo.forEach(h => h.classList.remove("ascending", "descending"));
+      header.classList.add(direction === "asc" ? "ascending" : "descending");
+
+      // Renderizar tabla con datos ordenados
+      renderTable(filteredData, currentPage);
+  }
+
+  function filterTable() {
+      const filters = {
+          //priorizar: document.getElementById("filter-prioridad")?.value.toLowerCase() || "",
+          fechaSolicitud: document.getElementById("filter-fechasolicitud")?.value.toLowerCase() || "",
+          codigoRadicado: document.getElementById("filter-númerodesolicitud")?.value.toLowerCase() || "",
+          tipoDocumento: document.getElementById("filter-nitconstructora")?.value.toLowerCase() || "",
+          solicitante: document.getElementById("filter-nombreconstructora")?.value.toLowerCase() || "",
+          nombreNegocio: document.getElementById("filter-númeroynombredenegocio")?.value.toLowerCase() || "",
+          numeroAnexoContable: document.getElementById("filter-tipoanexo")?.value.toLowerCase() || "",
+          municipio: document.getElementById("filter-municipio")?.value.toLowerCase() || "",
+          estado: document.getElementById("filter-estado")?.value.toLowerCase() || "",
+          asignadoNombre: document.getElementById("filter-asignadoa")?.value.toLowerCase() || "",
+      };
+
+      console.log("filters", filters)
+      filteredData = data.filter(row => {
+          let doctipo = (row.tipoDocumento + row.numeroDocumento || "").toLowerCase();
+          return (
+              doctipo.includes(filters.tipoDocumento) &&
+              new Date(row.fechaSolicitud).toLocaleDateString().toLowerCase().includes(filters.fechaSolicitud) &&
+              (row.codigoRadicado || "").toLowerCase().includes(filters.codigoRadicado) &&
+              (row.nombreAutorizado || "").toLowerCase().includes(filters.solicitante) &&
+              (row.nombreNegocio || "").toLowerCase().includes(filters.nombreNegocio) &&
+              (row.numeroAnexoContable || "").toLowerCase().includes(filters.numeroAnexoContable) &&
+              (row.municipio || "").toLowerCase().includes(filters.municipio) &&
+              (row.estado || "").toLowerCase().includes(filters.estado) &&
+              (
+    (row.analistaGestionNameAnexos || "Sin asignar").toLowerCase().includes(filters.asignadoNombre) ||
+    (row.asignadoNombre || "Sin asignar").toLowerCase().includes(filters.asignadoNombre)
+  )
+          );
+      });
+      console.log("data filtrada", filteredData)
+
+      currentPage = 1; // Resetear la paginación al aplicar un filtro
+      limpiarInputsHidden()
+      selectedData = [];
+      checkeds = [];
+      //Aqui se eliminan los registros de los datos del reporte
+      //  const dataClearFilter = selectedData.filter(i=> i.caseId != this.getAttribute("data-case-id"))
+      //  selectedData  =  dataClearFilter
+      renderTable(filteredData, currentPage);
+  }
+
+
+  function renderPagination(totalRows) {
+      const paginationContainer = document.querySelector("#pagination");
+      paginationContainer.innerHTML = ""; // Limpiar paginador
+      const totalPages = Math.ceil(totalRows / rowsPerPage);
+      for (let i = 1; i <= totalPages; i++) {
+          const button = document.createElement("button");
+          button.textContent = i;
+          button.classList.add("pagination-btn");
+          if (i === currentPage) button.classList.add("active");
+          button.onclick = () => {
+              currentPage = i;
+              renderTable(filteredData.length > 0 ? filteredData : data, currentPage);
+          };
+          paginationContainer.appendChild(button);
+      }
+  }
+
+
+
+  function verDetalle(id, codigoRadicado) {
+      // Actualiza el campo oculto con el número de radicado
+      const radicadoField = document.getElementsByName('radicado_detalle')[0];
+      const persistence_id = document.getElementsByName('persistence_id')[0];
+      if (radicadoField) {
+          radicadoField.value = codigoRadicado;
+          console.log(`Campo Radicado_detalle actualizado con: ${codigoRadicado}`);
+      } else {
+          console.error("No se encontró el campo oculto 'Radicado_detalle'.");
+      }
+      if (persistence_id) {
+          persistence_id.value = id;
+          console.log(`Campo persistence_id actualizado con: ${id}`);
+      }
+      const editSubmitButton = document.querySelector("#edit-actions-03-submit");
+      document.querySelector("#loader_scorreo").style.display = 'block'
+      editSubmitButton.click();
+  }
+
+
+  function limpiarInputsHidden() {
+      for (let index = 1; index <= 10; index++) {
+          document.getElementsByName(`fecha_${index}`)[0].value = '';
+          document.getElementsByName(`case_id_${index}`)[0].value = '';
+          document.getElementsByName(`radicado_2_${index}`)[0].value = '';
+          document.getElementsByName(`estado_${index}`)[0].value = '';
+          document.getElementsByName(`correo_${index}`)[0].value = '';
+          document.getElementsByName(`mt940_${index}`)[0].value = '';
+      }
+  }
+
+  document.querySelector("#edit-actions-03-submit").style.display = 'none'
+
+
+  //////////////////////////dashboard////////////////////
+
+  // const historico_data = document.getElementsByName('historico_data')[0]; // se cometa esta data por el momento...
+  const historico_data = [];
+
+  fetch('/user/peoples/id?_format=json')
+      .then(response => response.json())
+      .then(data => {
+          const fieldId = data[0].field_id;
+          const name = data[0].field_displayname;
+          console.log("field_id:", fieldId);
+          console.log("field_displayName:", name);
+
+          if (historico_data) {
+              // let data3 = JSON.parse(historico_data.value)[0].var; // se comenta por el momento...
+              let data3 = [];
+              console.log("historico", data3)
+
+              // Obtener la fecha y hora actual
+              const ahora = new Date(); // Ejemplo: 2025-02-25T09:33:03.869355
+              ahora.setMinutes(0, 0, 0);
+
+
+
+
+              // Obtener la fecha y hora exacta de hace un mes
+              const semanaPasada = new Date(ahora);
+              const semanaPasada2 = new Date(ahora);
+              semanaPasada2.setDate(ahora.getDate() - 30); // Restar 30 días
+              semanaPasada2.setHours(semanaPasada2.getHours() - 1);
+              semanaPasada.setDate(ahora.getDate() - 30); // Restar 30 días
+
+              // console.log("La semana pasada es:", semanaPasada)
+              // Función para verificar si un trámite está en el mes actual
+
+
+              const hoy = new Date();
+              hoy.setHours(0, 0, 0, 0);  // Asegurarse de que la hora esté a 00:00:00
+
+
+              const xesMesActual = (fechaInicio) => {
+                  const fechaTramite = new Date(fechaInicio);
+                  return fechaTramite.getMonth() === hoy.getMonth() && fechaTramite.getFullYear() === hoy.getFullYear();
+
+
+              };
+              // Inicializar contadores para la semana pasada
+              let totalRecibidosPasado = 0;
+              let totalEnProcesoPasado = 0;
+              let totalFinalizadosPasado = 0;
+              let xtotalFinalizadosPasado = 0;
+              let xtotalRecibidosPasado = 0;
+              let totalVencidosPasado = 0;
+
+              // Recorrer y contar trámites
+              data3.forEach(tramite => {
+                if (tramite.fechaInicio) {
+                  let fechaInicio = new Date(tramite.fechaInicio);
+
+                  // Validar si el trámite cayó dentro del mismo rango de fecha y hora exacta hace una semana
+                  //let esSemanaPasada = fechaInicio >= "2025-02-18T10:00:00.00" && fechaInicio <= "2025-02-18T10:59:00.00";
+                  //let esSemanaPasada = fechaInicio  >= "Tue Feb 18 2025 10:00:00 GMT-0500 (hora estándar de Colombia)" && fechaInicio <= "Tue Feb 25 2025 10:00:00 GMT-0500 (hora estándar de Colombia)";
+                  //let esSemanaPasada = fechaInicio >= semanaPasada && fechaInicio <= ahora;
+                  let esSemanaPasada = fechaInicio >= semanaPasada2 && fechaInicio <= semanaPasada;
+
+                  //console.log("semana pasada:", semanaPasada);
+                  //console.log("fecha de hoy:", ahora);
+
+                  if (esSemanaPasada) {
+                    if (tramite.estado === "Radicado") {
+                      totalRecibidosPasado++;
+                    } else if (['Finalizada', 'Cancelada'].includes(tramite.estado)) {
+                      totalFinalizadosPasado++;
+                    } else if (!['Radicado', 'Cancelada', 'Finalizada'].includes(tramite.estado)) {
+                      totalEnProcesoPasado++;
+                    }
+                  }
+
+                  if (xesMesActual(tramite.fechaInicio)) {
+                    if (tramite.estado === "Radicado") {
+                      xtotalRecibidosPasado++;
+                    } else if (['Finalizada', 'Cancelada'].includes(tramite.estado) && tramite.asignadoId === fieldId) {
+                      xtotalFinalizadosPasado++;
+                    }
+                  }
+
+
+
+
+                }
+              });
+
+              // Calcular el total de trámites en el pasado
+              let totalTramitesSemanaPasada =
+                  totalRecibidosPasado + totalEnProcesoPasado + totalFinalizadosPasado + totalVencidosPasado;
+
+              const business_data2 = document.getElementsByName('business_data')[0]
+              data2 = JSON.parse(business_data2.value)[0].var;
+
+              //data2 = data2.filter(row =>
+              //!(
+              // Excluir casos específicos
+              //(row.estado === "Radicado" && row.correo === false && row.mt940 === true) ||
+              //(row.estado === "Radicado" && row.correo === true && row.mt940 === true) ||
+              //(row.estado === "En Inclusión/Eliminación correo/MT940" && row.correo === false && row.mt940 === true) ||
+              //(row.estado === "En Inclusión/Eliminación correo/MT940" && row.correo === true && row.mt940 === true) ||
+              //(row.estado === "En Registro MT-940") ||
+              //(row.estado === "Finalizado Registro MT-940") ||
+              //(row.correo === true && row.mt940 === true)
+              //)
+              //);
+              // Inicializar contadores
+
+
+
+
+
+
+              let totalRecibidos = 0;
+              let totalEnProceso = 0;
+              let totalFinalizados = 0;
+              let totalVencidos = 0;
+
+              filteredData_cards = data2
+
+              // filteredData_cards = data2.filter(row =>
+              //     row.estado === "En trámite área gestión" && 
+              //     (row.gerenteGestionIdAnexos === fieldId 
+              //     || row.analistaGestionIdAnexos === fieldId 
+              //     || row.coordinadorGestionIdAnexos === fieldId)
+              // );
+
+              // Recorrer y contar por estado
+              filteredData_cards.forEach(tramite => {
+                  if (tramite.estado === "Radicado") {
+                    totalRecibidos++;
+                  } else if (['Finalizada', 'Cancelada'].includes(tramite.estado)) {
+                      totalFinalizados++;
+
+                  } else if (!['Radicado', 'Cancelada', 'Finalizada'].includes(tramite.estado)) {
+                      totalEnProceso++;
+                  }
+
+                  if (tramite.tareaCaducada && !['Cancelada', 'Finalizada'].includes(tramite.estado)) {
+                      totalVencidos++;
+                  }
+              });
+
+              // Mostrar resultados en consola
+              console.log('Total recibidos:', totalRecibidos);
+              console.log('Total en proceso:', totalEnProceso);
+              console.log('Total finalizados:', totalFinalizados);
+              console.log('Total vencidos:', totalVencidos);
+
+              // Actualizar el dashboard
+              document.querySelector("#edit-card-total-tramite > div > p > span").innerText = totalRecibidos;
+              document.querySelector("#edit-card-total-tramite-2 > div > p > span").innerText = totalEnProceso;
+              document.querySelector("#edit-card-total-tramite-3 > div > p > span").innerText = totalFinalizados;
+              document.querySelector("#edit-card-total-tramite-4 > div > p > span").innerText = totalVencidos;
+
+
+              // Calcular los porcentajes
+              let porcentajeRecibidos = (((totalRecibidos - totalRecibidosPasado) / totalRecibidosPasado) * 100).toFixed(0);
+              let porcentajeEnProceso = (((totalEnProceso - totalEnProcesoPasado) / totalEnProcesoPasado) * 100).toFixed(0);
+              let porcentajeFinalizados = (((totalFinalizados - totalFinalizadosPasado) / totalFinalizadosPasado) * 100).toFixed(0);
+              let porcentajeVencidos = (((totalVencidos - totalVencidosPasado) / totalVencidosPasado) * 100).toFixed(0);
+
+              //actualizar porcentajes
+
+
+              if (porcentajeRecibidos === "Infinity") {
+                  document.querySelector("#edit-card-total-tramite > div > div.card-botom > p.card-percenteje").innerText = "0%";
+              } else if (porcentajeRecibidos === "NaN") {
+                  document.querySelector("#edit-card-total-tramite > div > div.card-botom > p.card-percenteje").innerText = "0%";
+              } else {
+                  document.querySelector("#edit-card-total-tramite > div > div.card-botom > p.card-percenteje").innerText = porcentajeRecibidos + "%";
+              }
+              if (porcentajeFinalizados === "NaN") {
+                  document.querySelector("#edit-card-total-tramite-3 > div > div.card-botom > p.card-percenteje").innerText = "0%"
+              } else if (porcentajeFinalizados === "Infinity") {
+                  document.querySelector("#edit-card-total-tramite-3 > div > div.card-botom > p.card-percenteje").innerText = "0%"
+              } else {
+                  document.querySelector("#edit-card-total-tramite-3 > div > div.card-botom > p.card-percenteje").innerText = porcentajeFinalizados + "%"
+              }
+
+              // Mostrar resultados en consola
+              console.log('--- HISTÓRICO - MES PASADO (MISMA HORA) ---');
+              // console.log(`Rango analizado: ${semanaPasada.toISOString()} → ${semanaPasada2.toISOString()}`);
+              console.log(`Total trámites: ${totalRecibidosPasado}`);
+              //console.log(`Total recibidos: ${totalRecibidosPasado} (${porcentajeRecibidos}%)`);
+              //console.log(`Total en proceso: ${totalEnProcesoPasado} (${porcentajeEnProceso}%)`);
+              console.log(`Total finalizados: ${totalFinalizadosPasado} (${porcentajeFinalizados}%)`);
+              console.log(`Total vencidos: ${totalVencidosPasado} (${porcentajeVencidos}%)`);
+          }
+
+      })
+
+  console.log('Export Excel')
+  /// Export Report Excel
+  async function exportToExcel(dataArray, fileName = "data.xlsx") {
+      console.log('dataArray', dataArray)
+      if (typeof XLSX === "undefined") {
+          await import("https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js");
+      }
+      let rows = [];
+      
+       
+      dataArray.forEach((item) => {
+
+          if (item?.estado === "En trámite área gestión") {
+          rows.push({
+              ["Prioridad"]: item?.priorizar ? 'Si' : 'No',
+              ["Fecha de Solicitud"]: item?.fechaSolicitud?.split('T')[0] || "",
+              ["Número de solicitud"]: item?.codigoRadicado || "",
+              ["NIT Constructora"]: item?.numeroDocumento || "",
+              ["Nombre Constructora"]: item?.nombreAutorizado || "",
+              ["Numero de negocio"]: item?.numeroNegocio || "",
+              ["Nombre de negocio"]: item?.nombreNegocio || "",
+              ["Tipo anexo"]: item?.numeroAnexoContable || "",
+              ["Municipio"]: item?.municipio || "",
+              ["Estado"]: item?.estado || "",
+              ["Año anexo"]: item?.anioAnexo || "",
+              ["Mes Anexo"]: item?.mesAnexo || "",
+              ["Valor total del anexo"]: new Intl.NumberFormat('es-CO', {
+                  style: 'currency',
+                  currency: 'COP',
+                  minimumFractionDigits: 0
+              }).format(item?.valorTotalAnexo_string || 0),
+              ["Causal Devolución"]: item?.conceptoDevolucion || "",
+              ["Observaciones Internas"]: item?.observacionesInternas || "",
+              ["Observaciones Externas"]: item?.observacionesCliente || "",
+              ["Dentro de ANS"]: item.tareaCaducada === false ? "Dentro de ANS" : item.tareaCaducada === true ? "Vencido" : "",
+              ["Asignado a"]: item?.analistaGestionNameAnexos || ""
+          });
+          } else {
+          rows.push({
+              ["Prioridad"]: item?.priorizar ? 'Si' : 'No',
+              ["Fecha de Solicitud"]: item?.fechaSolicitud?.split('T')[0] || "",
+              ["Número de solicitud"]: item?.codigoRadicado || "",
+              ["NIT Constructora"]: item?.numeroDocumento || "",
+              ["Nombre Constructora"]: item?.nombreAutorizado || "",
+              ["Numero de negocio"]: item?.numeroNegocio || "",
+              ["Nombre de negocio"]: item?.nombreNegocio || "",
+              ["Tipo anexo"]: item?.numeroAnexoContable || "",
+              ["Municipio"]: item?.municipio || "",
+              ["Estado"]: item?.estado || "",
+              ["Año anexo"]: item?.anioAnexo || "",
+              ["Mes Anexo"]: item?.mesAnexo || "",
+              ["Valor total del anexo"]: new Intl.NumberFormat('es-CO', {
+                  style: 'currency',
+                  currency: 'COP',
+                  minimumFractionDigits: 0
+              }).format(item?.valorTotalAnexo_string || 0),
+              ["Causal Devolución"]: item?.conceptoDevolucion || "",
+              ["Observaciones Internas"]: item?.observacionesInternas || "",
+              ["Observaciones Externas"]: item?.observacionesCliente || "",
+              ["Dentro de ANS"]: item.tareaCaducada === false ? "Dentro de ANS" : item.tareaCaducada === true ? "Vencido" : "",
+              ["Asignado a"]: item?.asignadoNombre || ""
+          });
+          }
+
+      });
+
+      const ws = XLSX.utils.json_to_sheet(rows);
+
+      // Autoajustar columnas
+      const colWidths = Object.keys(rows[0]).map((key) => {
+          const maxLength = Math.max(
+              key.length,
+              ...rows.map((row) => (row[key] ? row[key].toString().length : 0))
+          );
+          return { wch: maxLength + 2 };
+      });
+      ws["!cols"] = colWidths;
+
+      // Estilos para encabezados
+      const headerRange = XLSX.utils.decode_range(ws["!ref"]);
+      for (let col = headerRange.s.c; col <= headerRange.e.c; col++) {
+          const cellAddress = XLSX.utils.encode_cell({ r: 0, c: col });
+          if (ws[cellAddress]) {
+              ws[cellAddress].s = {
+                  fill: { fgColor: { rgb: "0B5394" } },
+                  font: { bold: true, color: { rgb: "FFFF00" } },
+                  alignment: { horizontal: "center", vertical: "center" },
+              };
+          }
+      }
+
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "Datos");
+      XLSX.writeFile(wb, fileName);
+      return true;
+  }
+
+  // Evento para el botón de generación del reporte
+  document
+      .getElementById("btnGenerarReporte")
+      .addEventListener("click", async function (e) {
+          e.preventDefault();
+          console.log("Generando reporte...");
+
+          for (let index = 1; index <= 10; index++) {
+              document.getElementsByName(`fecha_${index}`)[0].value = '';
+              document.getElementsByName(`case_id_${index}`)[0].value = '';
+              document.getElementsByName(`radicado_2_${index}`)[0].value = '';
+              document.getElementsByName(`estado_${index}`)[0].value = '';
+              document.getElementsByName(`correo_${index}`)[0].value = '';
+              document.getElementsByName(`mt940_${index}`)[0].value = '';
+          }
+
+          await exportToExcel(selectedData.length ? selectedData : filteredData).then(
+              (result) => {
+                  if (result) {
+                      console.log("Reporte generado con éxito.");
+                      if (selectedData.length) {
+                          selectedData = [];
+                          checkeds = [];
+                          renderTable(filteredData, currentPage);
+
+                      }
+                  }
+              }
+          );
+      });
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ""
+  ajax_effect: ""
+  ajax_speed: null
+  page: true
+  page_submit_path: ""
+  page_confirm_path: ""
+  page_theme_name: ""
+  form_title: both
+  form_submit_once: false
+  form_open_message: ""
+  form_close_message: ""
+  form_exception_message: ""
+  form_previous_submissions: false
+  form_confidential: false
+  form_confidential_message: ""
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ""
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ""
+  form_access_denied_message: ""
+  form_access_denied_attributes: {}
+  form_file_limit: ""
+  form_attributes: {}
+  form_method: ""
+  form_action: ""
+  share: false
+  share_node: false
+  share_theme_name: ""
+  share_title: true
+  share_page_body_attributes: {}
+  submission_label: ""
+  submission_exception_message: ""
+  submission_locked_message: ""
+  submission_log: false
+  submission_excluded_elements: {}
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {}
+  submission_views_replace: {}
+  submission_user_columns: {}
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ""
+  submission_access_denied_message: ""
+  submission_access_denied_attributes: {}
+  previous_submission_message: ""
+  previous_submissions_message: ""
+  autofill: false
+  autofill_message: ""
+  autofill_excluded_elements: {}
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ""
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ""
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ""
+  wizard_prev_button_label: ""
+  wizard_next_button_label: ""
+  wizard_toggle: false
+  wizard_toggle_show_label: ""
+  wizard_toggle_hide_label: ""
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ""
+  preview_title: ""
+  preview_message: ""
+  preview_attributes: {}
+  preview_excluded_elements: {}
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ""
+  draft_loaded_message: ""
+  draft_pending_single_message: ""
+  draft_pending_multiple_message: ""
+  confirmation_type: url
+  confirmation_url: "/loader?modal_exito5=true"
+  confirmation_title: ""
+  confirmation_message: '<div class="fidu-modal fidu-flex-col"><div class="fidu-flex-row"><p><img src="/sites/default/files/2024-11/checkmark-circle-outline.svg" width="32px" height="32px" alt="check"></p><h2>Se realizó el cambio de estado de forma exitosa.</h2></div><div class="text-fidu"><p class="fidu-btn-submit"><a href="/form/f-funcionarios-bandeja-de-entra" id="cambio_exitoso"><button>Aceptar</button></a></p></div></div>'
+  confirmation_attributes: {}
+  confirmation_back: true
+  confirmation_back_label: ""
+  confirmation_back_attributes: {}
+  confirmation_exclude_query: true
+  confirmation_exclude_token: true
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ""
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ""
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: all
+  purge_days: 1
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - parametrizador_contable
+    users: {}
+    permissions: {}
+  view_any:
+    roles:
+      - parametrizador_contable
+    users: {}
+    permissions: {}
+  update_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  delete_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  purge_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  view_own:
+    roles:
+      - funcionario
+      - sac_correos
+      - sac_campanas
+      - pruebas
+      - soporte_contable
+      - analista_gestion_inmobiliaria
+      - coordinador_gestion_inmobiliaria
+      - gerente_gestion_inmobiliaria
+      - contador_inmobiliario
+    users: {}
+    permissions: {}
+  update_own:
+    roles: {}
+    users: {}
+    permissions: {}
+  delete_own:
+    roles: {}
+    users: {}
+    permissions: {}
+  administer:
+    roles: {}
+    users: {}
+    permissions: {}
+  test:
+    roles: {}
+    users: {}
+    permissions: {}
+  configuration:
+    roles: {}
+    users: {}
+    permissions: {}
+handlers:
+  filtro_radicado:
+    id: remote_post
+    handler_id: filtro_radicado
+    label: "Filtro Radicado"
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -50
+    settings:
+      method: GET
+      type: ""
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        select: select
+        tabla_01_check_status: tabla_01_check_status
+        tabla_02_check_status: tabla_02_check_status
+        prioridad: prioridad
+        fecha_solicitud: fecha_solicitud
+        numero_de_solicitud: numero_de_solicitud
+        nit_constructora: nit_constructora
+        nombre_constructora: nombre_constructora
+        numero_y_nombre_de_negocio: numero_y_nombre_de_negocio
+        tipo_anexo: tipo_anexo
+        municipio: municipio
+        estado: estado
+        nombre_asignacion: nombre_asignacion
+        business_data: business_data
+        historico_data: historico_data
+        data_funcionario: data_funcionario
+        data_estado: data_estado
+        radicado_detalle: radicado_detalle
+        fecha_1: fecha_1
+        case_id_1: case_id_1
+        task_id: task_id
+        task_id2: task_id2
+        task_id3: task_id3
+        task_id4: task_id4
+        task_id5: task_id5
+        product_data_msg: product_data_msg
+        radicado_2_1: radicado_2_1
+        estado_1: estado_1
+        correo_1: correo_1
+        mt940_1: mt940_1
+        fecha_2: fecha_2
+        case_id_2: case_id_2
+        task_id_2: task_id_2
+        task_id2_2: task_id2_2
+        task_id3_2: task_id3_2
+        task_id4_2: task_id4_2
+        task_id5_2: task_id5_2
+        radicado_2_2: radicado_2_2
+        estado_2: estado_2
+        correo_2: correo_2
+        mt940_2: mt940_2
+        fecha_3: fecha_3
+        case_id_3: case_id_3
+        task_id_3: task_id_3
+        task_id2_3: task_id2_3
+        task_id3_3: task_id3_3
+        task_id4_3: task_id4_3
+        task_id5_3: task_id5_3
+        radicado_2_3: radicado_2_3
+        estado_3: estado_3
+        correo_3: correo_3
+        mt940_3: mt940_3
+        fecha_4: fecha_4
+        case_id_4: case_id_4
+        task_id_4: task_id_4
+        task_id2_4: task_id2_4
+        task_id3_4: task_id3_4
+        task_id4_4: task_id4_4
+        task_id5_4: task_id5_4
+        radicado_2_4: radicado_2_4
+        estado_4: estado_4
+        correo_4: correo_4
+        mt940_4: mt940_4
+        fecha_5: fecha_5
+        case_id_5: case_id_5
+        task_id_5: task_id_5
+        task_id2_5: task_id2_5
+        task_id3_5: task_id3_5
+        task_id4_5: task_id4_5
+        task_id5_5: task_id5_5
+        radicado_2_5: radicado_2_5
+        estado_5: estado_5
+        correo_5: correo_5
+        mt940_5: mt940_5
+        fecha_6: fecha_6
+        case_id_6: case_id_6
+        task_id_6: task_id_6
+        task_id2_6: task_id2_6
+        task_id3_6: task_id3_6
+        task_id4_6: task_id4_6
+        task_id5_6: task_id5_6
+        radicado_2_6: radicado_2_6
+        estado_6: estado_6
+        correo_6: correo_6
+        mt940_6: mt940_6
+        fecha_7: fecha_7
+        case_id_7: case_id_7
+        task_id_7: task_id_7
+        task_id2_7: task_id2_7
+        task_id3_7: task_id3_7
+        task_id4_7: task_id4_7
+        task_id5_7: task_id5_7
+        radicado_2_7: radicado_2_7
+        estado_7: estado_7
+        correo_7: correo_7
+        mt940_7: mt940_7
+        fecha_8: fecha_8
+        case_id_8: case_id_8
+        task_id_8: task_id_8
+        task_id2_8: task_id2_8
+        task_id3_8: task_id3_8
+        task_id4_8: task_id4_8
+        task_id5_8: task_id5_8
+        radicado_2_8: radicado_2_8
+        estado_8: estado_8
+        correo_8: correo_8
+        mt940_8: mt940_8
+        fecha_9: fecha_9
+        case_id_9: case_id_9
+        task_id_9: task_id_9
+        task_id2_9: task_id2_9
+        task_id3_9: task_id3_9
+        task_id4_9: task_id4_9
+        task_id5_9: task_id5_9
+        radicado_2_9: radicado_2_9
+        estado_9: estado_9
+        correo_9: correo_9
+        mt940_9: mt940_9
+        fecha_10: fecha_10
+        case_id_10: case_id_10
+        task_id_10: task_id_10
+        task_id2_10: task_id2_10
+        task_id3_10: task_id3_10
+        task_id4_10: task_id4_10
+        task_id5_10: task_id5_10
+        radicado_2_10: radicado_2_10
+        estado_10: estado_10
+        correo_10: correo_10
+        mt940_10: mt940_10
+        persistence_id: persistence_id
+        archivos: archivos
+        archivos_onbase: archivos_onbase
+      custom_data: ""
+      custom_options: |
+        headers:
+           Cookie: '[current-user:field_jsessionid]'
+        verify: false
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: "https://qatramitekfidubog.softmanagement.com.co:8443/bonita/API/bdm/businessData/com.company.model.Solicitud?q=findByCodigoRadicado&p=0&c=100&f=codigoRadicado=[webform_submission:values:radicado_detalle]"
+      completed_custom_data: ""
+      updated_url: ""
+      updated_custom_data: ""
+      deleted_url: ""
+      deleted_custom_data: ""
+      draft_created_url: ""
+      draft_created_custom_data: ""
+      draft_updated_url: ""
+      draft_updated_custom_data: ""
+      converted_url: ""
+      converted_custom_data: ""
+      message: ""
+      messages: {}
+      error_url: ""
+  configuracion:
+    id: settings
+    handler_id: configuracion
+    label: Configuración
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -45
+    settings:
+      debug: false
+      preview_title: ""
+      preview_message: ""
+      confirmation_url: /form/generalidades-parametrizador
+      confirmation_title: ""
+      confirmation_message: ""
+  filtro_radicado_1:
+    id: remote_post
+    handler_id: filtro_radicado_1
+    label: "Filtro Radicado"
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -49
+    settings:
+      method: GET
+      type: ""
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        select: select
+        tabla_01_check_status: tabla_01_check_status
+        tabla_02_check_status: tabla_02_check_status
+        prioridad: prioridad
+        fecha_solicitud: fecha_solicitud
+        numero_de_solicitud: numero_de_solicitud
+        nit_constructora: nit_constructora
+        nombre_constructora: nombre_constructora
+        numero_y_nombre_de_negocio: numero_y_nombre_de_negocio
+        tipo_anexo: tipo_anexo
+        municipio: municipio
+        estado: estado
+        nombre_asignacion: nombre_asignacion
+        business_data: business_data
+        historico_data: historico_data
+        data_funcionario: data_funcionario
+        data_estado: data_estado
+        radicado_detalle: radicado_detalle
+        fecha_1: fecha_1
+        case_id_1: case_id_1
+        task_id: task_id
+        task_id2: task_id2
+        task_id3: task_id3
+        task_id4: task_id4
+        task_id5: task_id5
+        product_data_msg: product_data_msg
+        radicado_2_1: radicado_2_1
+        estado_1: estado_1
+        correo_1: correo_1
+        mt940_1: mt940_1
+        fecha_2: fecha_2
+        case_id_2: case_id_2
+        task_id_2: task_id_2
+        task_id2_2: task_id2_2
+        task_id3_2: task_id3_2
+        task_id4_2: task_id4_2
+        task_id5_2: task_id5_2
+        radicado_2_2: radicado_2_2
+        estado_2: estado_2
+        correo_2: correo_2
+        mt940_2: mt940_2
+        fecha_3: fecha_3
+        case_id_3: case_id_3
+        task_id_3: task_id_3
+        task_id2_3: task_id2_3
+        task_id3_3: task_id3_3
+        task_id4_3: task_id4_3
+        task_id5_3: task_id5_3
+        radicado_2_3: radicado_2_3
+        estado_3: estado_3
+        correo_3: correo_3
+        mt940_3: mt940_3
+        fecha_4: fecha_4
+        case_id_4: case_id_4
+        task_id_4: task_id_4
+        task_id2_4: task_id2_4
+        task_id3_4: task_id3_4
+        task_id4_4: task_id4_4
+        task_id5_4: task_id5_4
+        radicado_2_4: radicado_2_4
+        estado_4: estado_4
+        correo_4: correo_4
+        mt940_4: mt940_4
+        fecha_5: fecha_5
+        case_id_5: case_id_5
+        task_id_5: task_id_5
+        task_id2_5: task_id2_5
+        task_id3_5: task_id3_5
+        task_id4_5: task_id4_5
+        task_id5_5: task_id5_5
+        radicado_2_5: radicado_2_5
+        estado_5: estado_5
+        correo_5: correo_5
+        mt940_5: mt940_5
+        fecha_6: fecha_6
+        case_id_6: case_id_6
+        task_id_6: task_id_6
+        task_id2_6: task_id2_6
+        task_id3_6: task_id3_6
+        task_id4_6: task_id4_6
+        task_id5_6: task_id5_6
+        radicado_2_6: radicado_2_6
+        estado_6: estado_6
+        correo_6: correo_6
+        mt940_6: mt940_6
+        fecha_7: fecha_7
+        case_id_7: case_id_7
+        task_id_7: task_id_7
+        task_id2_7: task_id2_7
+        task_id3_7: task_id3_7
+        task_id4_7: task_id4_7
+        task_id5_7: task_id5_7
+        radicado_2_7: radicado_2_7
+        estado_7: estado_7
+        correo_7: correo_7
+        mt940_7: mt940_7
+        fecha_8: fecha_8
+        case_id_8: case_id_8
+        task_id_8: task_id_8
+        task_id2_8: task_id2_8
+        task_id3_8: task_id3_8
+        task_id4_8: task_id4_8
+        task_id5_8: task_id5_8
+        radicado_2_8: radicado_2_8
+        estado_8: estado_8
+        correo_8: correo_8
+        mt940_8: mt940_8
+        fecha_9: fecha_9
+        case_id_9: case_id_9
+        task_id_9: task_id_9
+        task_id2_9: task_id2_9
+        task_id3_9: task_id3_9
+        task_id4_9: task_id4_9
+        task_id5_9: task_id5_9
+        radicado_2_9: radicado_2_9
+        estado_9: estado_9
+        correo_9: correo_9
+        mt940_9: mt940_9
+        fecha_10: fecha_10
+        case_id_10: case_id_10
+        task_id_10: task_id_10
+        task_id2_10: task_id2_10
+        task_id3_10: task_id3_10
+        task_id4_10: task_id4_10
+        task_id5_10: task_id5_10
+        radicado_2_10: radicado_2_10
+        estado_10: estado_10
+        correo_10: correo_10
+        mt940_10: mt940_10
+        persistence_id: persistence_id
+        archivos: archivos
+        archivos_onbase: archivos_onbase
+      custom_data: ""
+      custom_options: |
+        headers:
+           Cookie: '[current-user:field_jsessionid]'
+        verify: false
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: "https://qatramitekfidubog.softmanagement.com.co:8443/bonita/API/bdm/businessData/com.company.model.HistoricoEstados?q=findByCodigoRadicado&p=0&c=1000&f=codigoRadicado=[webform_submission:values:radicado_detalle]"
+      completed_custom_data: ""
+      updated_url: ""
+      updated_custom_data: ""
+      deleted_url: ""
+      deleted_custom_data: ""
+      draft_created_url: ""
+      draft_created_custom_data: ""
+      draft_updated_url: ""
+      draft_updated_custom_data: ""
+      converted_url: ""
+      converted_custom_data: ""
+      message: ""
+      messages: {}
+      error_url: ""
+  documentos:
+    id: remote_post
+    handler_id: documentos
+    label: ListadoDocumentos
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -48
+    settings:
+      method: GET
+      type: ""
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        select: select
+        tabla_01_check_status: tabla_01_check_status
+        tabla_02_check_status: tabla_02_check_status
+        prioridad: prioridad
+        fecha_solicitud: fecha_solicitud
+        numero_de_solicitud: numero_de_solicitud
+        nit_constructora: nit_constructora
+        nombre_constructora: nombre_constructora
+        numero_y_nombre_de_negocio: numero_y_nombre_de_negocio
+        tipo_anexo: tipo_anexo
+        municipio: municipio
+        estado: estado
+        nombre_asignacion: nombre_asignacion
+        business_data: business_data
+        historico_data: historico_data
+        data_funcionario: data_funcionario
+        data_estado: data_estado
+        radicado_detalle: radicado_detalle
+        fecha_1: fecha_1
+        case_id_1: case_id_1
+        task_id: task_id
+        task_id2: task_id2
+        task_id3: task_id3
+        task_id4: task_id4
+        task_id5: task_id5
+        product_data_msg: product_data_msg
+        radicado_2_1: radicado_2_1
+        estado_1: estado_1
+        correo_1: correo_1
+        mt940_1: mt940_1
+        fecha_2: fecha_2
+        case_id_2: case_id_2
+        task_id_2: task_id_2
+        task_id2_2: task_id2_2
+        task_id3_2: task_id3_2
+        task_id4_2: task_id4_2
+        task_id5_2: task_id5_2
+        radicado_2_2: radicado_2_2
+        estado_2: estado_2
+        correo_2: correo_2
+        mt940_2: mt940_2
+        fecha_3: fecha_3
+        case_id_3: case_id_3
+        task_id_3: task_id_3
+        task_id2_3: task_id2_3
+        task_id3_3: task_id3_3
+        task_id4_3: task_id4_3
+        task_id5_3: task_id5_3
+        radicado_2_3: radicado_2_3
+        estado_3: estado_3
+        correo_3: correo_3
+        mt940_3: mt940_3
+        fecha_4: fecha_4
+        case_id_4: case_id_4
+        task_id_4: task_id_4
+        task_id2_4: task_id2_4
+        task_id3_4: task_id3_4
+        task_id4_4: task_id4_4
+        task_id5_4: task_id5_4
+        radicado_2_4: radicado_2_4
+        estado_4: estado_4
+        correo_4: correo_4
+        mt940_4: mt940_4
+        fecha_5: fecha_5
+        case_id_5: case_id_5
+        task_id_5: task_id_5
+        task_id2_5: task_id2_5
+        task_id3_5: task_id3_5
+        task_id4_5: task_id4_5
+        task_id5_5: task_id5_5
+        radicado_2_5: radicado_2_5
+        estado_5: estado_5
+        correo_5: correo_5
+        mt940_5: mt940_5
+        fecha_6: fecha_6
+        case_id_6: case_id_6
+        task_id_6: task_id_6
+        task_id2_6: task_id2_6
+        task_id3_6: task_id3_6
+        task_id4_6: task_id4_6
+        task_id5_6: task_id5_6
+        radicado_2_6: radicado_2_6
+        estado_6: estado_6
+        correo_6: correo_6
+        mt940_6: mt940_6
+        fecha_7: fecha_7
+        case_id_7: case_id_7
+        task_id_7: task_id_7
+        task_id2_7: task_id2_7
+        task_id3_7: task_id3_7
+        task_id4_7: task_id4_7
+        task_id5_7: task_id5_7
+        radicado_2_7: radicado_2_7
+        estado_7: estado_7
+        correo_7: correo_7
+        mt940_7: mt940_7
+        fecha_8: fecha_8
+        case_id_8: case_id_8
+        task_id_8: task_id_8
+        task_id2_8: task_id2_8
+        task_id3_8: task_id3_8
+        task_id4_8: task_id4_8
+        task_id5_8: task_id5_8
+        radicado_2_8: radicado_2_8
+        estado_8: estado_8
+        correo_8: correo_8
+        mt940_8: mt940_8
+        fecha_9: fecha_9
+        case_id_9: case_id_9
+        task_id_9: task_id_9
+        task_id2_9: task_id2_9
+        task_id3_9: task_id3_9
+        task_id4_9: task_id4_9
+        task_id5_9: task_id5_9
+        radicado_2_9: radicado_2_9
+        estado_9: estado_9
+        correo_9: correo_9
+        mt940_9: mt940_9
+        fecha_10: fecha_10
+        case_id_10: case_id_10
+        task_id_10: task_id_10
+        task_id2_10: task_id2_10
+        task_id3_10: task_id3_10
+        task_id4_10: task_id4_10
+        task_id5_10: task_id5_10
+        radicado_2_10: radicado_2_10
+        estado_10: estado_10
+        correo_10: correo_10
+        mt940_10: mt940_10
+        persistence_id: persistence_id
+        archivos: archivos
+        archivos_onbase: archivos_onbase
+      custom_data: ""
+      custom_options: |
+        headers:
+           Cookie: '[current-user:field_jsessionid]'
+        verify: false
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: "https://qatramitekfidubog.softmanagement.com.co:8443/bonita/API/bdm/businessData/com.company.model.ArchivosAdjuntosFull?q=findByCodigoRadicado&p=0&c=1000000&f=codigoRadicado=[webform_submission:values:radicado_detalle]"
+      completed_custom_data: ""
+      updated_url: ""
+      updated_custom_data: ""
+      deleted_url: ""
+      deleted_custom_data: ""
+      draft_created_url: ""
+      draft_created_custom_data: ""
+      draft_updated_url: ""
+      draft_updated_custom_data: ""
+      converted_url: ""
+      converted_custom_data: ""
+      message: ""
+      messages: {}
+      error_url: ""
+  listado_onbase:
+    id: remote_post
+    handler_id: listado_onbase
+    label: "Listado OnBase"
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -47
+    settings:
+      method: GET
+      type: ""
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+        select: select
+        tabla_01_check_status: tabla_01_check_status
+        tabla_02_check_status: tabla_02_check_status
+        prioridad: prioridad
+        fecha_solicitud: fecha_solicitud
+        numero_de_solicitud: numero_de_solicitud
+        nit_constructora: nit_constructora
+        nombre_constructora: nombre_constructora
+        numero_y_nombre_de_negocio: numero_y_nombre_de_negocio
+        tipo_anexo: tipo_anexo
+        municipio: municipio
+        estado: estado
+        nombre_asignacion: nombre_asignacion
+        business_data: business_data
+        historico_data: historico_data
+        data_funcionario: data_funcionario
+        data_estado: data_estado
+        radicado_detalle: radicado_detalle
+        fecha_1: fecha_1
+        case_id_1: case_id_1
+        task_id: task_id
+        task_id2: task_id2
+        task_id3: task_id3
+        task_id4: task_id4
+        task_id5: task_id5
+        product_data_msg: product_data_msg
+        radicado_2_1: radicado_2_1
+        estado_1: estado_1
+        correo_1: correo_1
+        mt940_1: mt940_1
+        fecha_2: fecha_2
+        case_id_2: case_id_2
+        task_id_2: task_id_2
+        task_id2_2: task_id2_2
+        task_id3_2: task_id3_2
+        task_id4_2: task_id4_2
+        task_id5_2: task_id5_2
+        radicado_2_2: radicado_2_2
+        estado_2: estado_2
+        correo_2: correo_2
+        mt940_2: mt940_2
+        fecha_3: fecha_3
+        case_id_3: case_id_3
+        task_id_3: task_id_3
+        task_id2_3: task_id2_3
+        task_id3_3: task_id3_3
+        task_id4_3: task_id4_3
+        task_id5_3: task_id5_3
+        radicado_2_3: radicado_2_3
+        estado_3: estado_3
+        correo_3: correo_3
+        mt940_3: mt940_3
+        fecha_4: fecha_4
+        case_id_4: case_id_4
+        task_id_4: task_id_4
+        task_id2_4: task_id2_4
+        task_id3_4: task_id3_4
+        task_id4_4: task_id4_4
+        task_id5_4: task_id5_4
+        radicado_2_4: radicado_2_4
+        estado_4: estado_4
+        correo_4: correo_4
+        mt940_4: mt940_4
+        fecha_5: fecha_5
+        case_id_5: case_id_5
+        task_id_5: task_id_5
+        task_id2_5: task_id2_5
+        task_id3_5: task_id3_5
+        task_id4_5: task_id4_5
+        task_id5_5: task_id5_5
+        radicado_2_5: radicado_2_5
+        estado_5: estado_5
+        correo_5: correo_5
+        mt940_5: mt940_5
+        fecha_6: fecha_6
+        case_id_6: case_id_6
+        task_id_6: task_id_6
+        task_id2_6: task_id2_6
+        task_id3_6: task_id3_6
+        task_id4_6: task_id4_6
+        task_id5_6: task_id5_6
+        radicado_2_6: radicado_2_6
+        estado_6: estado_6
+        correo_6: correo_6
+        mt940_6: mt940_6
+        fecha_7: fecha_7
+        case_id_7: case_id_7
+        task_id_7: task_id_7
+        task_id2_7: task_id2_7
+        task_id3_7: task_id3_7
+        task_id4_7: task_id4_7
+        task_id5_7: task_id5_7
+        radicado_2_7: radicado_2_7
+        estado_7: estado_7
+        correo_7: correo_7
+        mt940_7: mt940_7
+        fecha_8: fecha_8
+        case_id_8: case_id_8
+        task_id_8: task_id_8
+        task_id2_8: task_id2_8
+        task_id3_8: task_id3_8
+        task_id4_8: task_id4_8
+        task_id5_8: task_id5_8
+        radicado_2_8: radicado_2_8
+        estado_8: estado_8
+        correo_8: correo_8
+        mt940_8: mt940_8
+        fecha_9: fecha_9
+        case_id_9: case_id_9
+        task_id_9: task_id_9
+        task_id2_9: task_id2_9
+        task_id3_9: task_id3_9
+        task_id4_9: task_id4_9
+        task_id5_9: task_id5_9
+        radicado_2_9: radicado_2_9
+        estado_9: estado_9
+        correo_9: correo_9
+        mt940_9: mt940_9
+        fecha_10: fecha_10
+        case_id_10: case_id_10
+        task_id_10: task_id_10
+        task_id2_10: task_id2_10
+        task_id3_10: task_id3_10
+        task_id4_10: task_id4_10
+        task_id5_10: task_id5_10
+        radicado_2_10: radicado_2_10
+        estado_10: estado_10
+        correo_10: correo_10
+        mt940_10: mt940_10
+        persistence_id: persistence_id
+        archivos: archivos
+        archivos_onbase: archivos_onbase
+      custom_data: ""
+      custom_options: |
+        headers:
+           Cookie: '[current-user:field_jsessionid]'
+        verify: false
+      file_data: true
+      cast: false
+      debug: false
+      completed_url: "https://qatramitekfidubog.softmanagement.com.co:8443/bonita/API/bdm/businessData/com.company.model.ArchivosAdjuntosVisualizar?q=findByCodigoRadicado&p=0&c=1000000&f=codigoRadicado=[webform_submission:values:radicado_detalle]"
+      completed_custom_data: ""
+      updated_url: ""
+      updated_custom_data: ""
+      deleted_url: ""
+      deleted_custom_data: ""
+      draft_created_url: ""
+      draft_created_custom_data: ""
+      draft_updated_url: ""
+      draft_updated_custom_data: ""
+      converted_url: ""
+      converted_custom_data: ""
+      message: ""
+      messages: {}
+      error_url: ""
+  entidad:
+    id: webform_entity_handler
+    handler_id: entidad
+    label: Entidad
+    notes: ""
+    status: true
+    conditions:
+      enabled:
+        ':input[name="radicado_detalle"]':
+          filled: true
+    weight: -46
+    settings:
+      operation: "[current-user:uid]"
+      skip_if_exists: false
+      entity_properties: ""
+      entity_type_id: "user:user"
+      entity_values:
+        field_ra:
+          value: "[webform_submission:values:radicado_detalle]"
+      entity_revision: false
+      states:
+        - completed
+variants: {}

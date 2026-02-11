@@ -1,0 +1,1373 @@
+uuid: 34593694-f4c3-43e6-9012-7775269a025f
+langcode: es
+status: open
+dependencies: {}
+weight: 0
+open: null
+close: null
+uid: 3
+template: false
+archive: false
+id: form_reporte_general
+title: "form reporte general"
+description: ""
+categories: {}
+elements: |-
+  processed_text2:
+    '#type': processed_text
+    '#text': '<img style="display:none;" src="/sites/default/files/2025-01/loader.gif" alt="Fiduciaria Bogotá" width="50" height="50" id="loader_scorreo">'
+    '#format': full_html
+  processed_text:
+    '#type': processed_text
+    '#text': '<h2>Reporte general</h2>'
+    '#format': basic_html
+  row_01:
+    '#type': webform_flexbox
+    '#align_items': center
+    periodo_de_analisis:
+      '#type': label
+      '#title': 'Periodo de análisis'
+    desde:
+      '#type': textfield
+      '#title': 'Desde:'
+      '#placeholder': 02/01/2025
+    hasta:
+      '#type': textfield
+      '#title': 'Hasta:'
+      '#placeholder': 02/01/2025
+    categoria:
+      '#type': select
+      '#title': Categoria
+      '#options':
+        Consultas: Consultas
+        Trámites: Trámites
+      '#empty_option': Todos
+      '#wrapper_attributes':
+        class:
+          - d-none
+    linea_de_negocio:
+      '#type': select
+      '#title': 'Línea de negocio'
+      '#options':
+        Inversión: Inversión
+        'Fiducia administración': 'Fiducia administración'
+        'Fiducia inmobiliaria': 'Fiducia inmobiliaria'
+        'Compradores inmobiliarios': 'Compradores inmobiliarios'
+      '#empty_option': Todos
+      '#wrapper_attributes':
+        class:
+          - d-none
+  row_02:
+    '#type': webform_flexbox
+    '#attributes':
+      style: 'width: 620px!important;'
+  seccion_html:
+    '#type': processed_text
+    '#text': '<div id="html">x</div>'
+    '#format': full_html
+  business_data:
+    '#type': webform_computed_twig
+    '#title': business_data
+    '#wrapper_attributes':
+      class:
+        - hidden
+    '#display_on': form
+    '#template': "{{ drupal_view('funcionario_reporte','rest_export_nested_2') }}"
+    '#whitespace': trim
+    '#ajax': true
+  historico_data:
+    '#type': webform_computed_twig
+    '#title': historico_data
+    '#wrapper_attributes':
+      class:
+        - hidden
+    '#display_on': form
+    '#template': "{{ drupal_view('funcionario_reporte','rest_export_nested_3')  }}"
+    '#whitespace': trim
+    '#ajax': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#attributes':
+      class:
+        - hidden
+    '#submit_hide': true
+css: |
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .f-main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 0px;
+  }
+
+  .score-container {
+    width: 90%;
+  }
+
+  .score-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en dispositivos pequeños */
+  }
+
+  .score-box {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre los boxes */
+  }
+
+  .score-chart {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 70%;  /*Asegura que no se estire más allá de 300px */
+    margin-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    width: 20%;
+    margin-top: 20px;
+  }
+  .card{
+    margin:10px;
+  }
+
+  #graficoCategoria,
+  #graficoLineaNegocio {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  @media (max-width: 1140px) {
+    .score-box {
+      width: 48%; /* En pantallas medianas, los boxes ocuparán el 48% del ancho */
+    }
+    
+    .card-container {
+      width: 48%; /* Ajusta el tamaño del contenedor de las tarjetas */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* En pantallas pequeñas, los elementos se apilan en columna */
+      gap: 20px; /* Ajusta el espacio entre los elementos */
+    }
+    
+    .score-container {
+      width: 90%; /* En pantallas pequeñas, ajustamos el ancho */
+    }
+
+    .score-wrapper {
+      justify-content: center; /* Centra los elementos */
+    }
+
+    .score-box {
+      width: 90%; /* Los boxes ocupan el 90% del ancho */
+      margin: 10px 0;
+    }
+
+    .score-chart {
+      width: 100%; /* Asegura que el gráfico ocupe el 100% de su contenedor */
+      max-width: 70%;
+      margin: 0 auto;
+    }
+
+    .card-container {
+      width: 100%; /* Las tarjetas ocupan el 100% del ancho */
+    }
+
+    #graficoCategoria, #graficoLineaNegocio {
+      width: 100% !important; /* Asegura que los gráficos sean adaptables */
+      height: auto !important; /* Ajuste automático de la altura */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .score-box {
+      width: 100%; /* En pantallas muy pequeñas, los boxes ocupan el 100% */
+    }
+
+    .card-container {
+      width: 100%; /* Las tarjetas ocupan el 100% */
+    }
+
+    #graficoCategoria, #graficoLineaNegocio {
+      width: 100% !important;
+      height: 150px !important; /* Ajusta el tamaño de los gráficos para pantallas muy pequeñas */
+    }
+  }
+javascript: |+
+  document.addEventListener("DOMContentLoaded", () =>{
+    let inputElement_desde = document.querySelector("#edit-desde")
+    let inputElement_hasta = document.querySelector("#edit-hasta");
+    // Verificar que el elemento existe antes de cambiar el tipo
+    if (inputElement_desde || inputElement_hasta) {
+        inputElement_desde.type = 'date'; // Cambiar el tipo del input a 'date'
+        inputElement_hasta.type = 'date'; // Cambiar el tipo del input a 'date'
+    }
+    const business_data = document.getElementsByName('business_data')[0]
+    let data = business_data ? JSON.parse(business_data.value)[0].var : [];
+      data = data.filter(row =>             
+        !(
+            // Excluir casos específicos
+            //(row.estado === "Radicado" && row.correo === false && row.mt940 === true) ||
+            //(row.estado === "Radicado" && row.correo === true && row.mt940 === true) ||
+            //(row.estado === "En Inclusión/Eliminación Correo" && row.correo === false && row.mt940 === true) ||
+            //(row.estado === "En Inclusión/Eliminación Correo" && row.correo === true && row.mt940 === true) ||
+            (row.estado === "En Registro MT-940") ||
+            (row.estado === "Finalizado Registro MT-940") ||
+            (row.correo === true && row.mt940 === true) ||
+            (row.codigoRadicado === "0")
+          )
+    );
+      console.log("Tabla Solicitud", data)
+
+    // Asignar la fecha actual a los inputs desde y hasta
+    const now = new Date();
+    now.setMinutes(now.getMinutes() - now.getTimezoneOffset()); // Ajusta la zona horaria local
+    const currentDate = now.toISOString().split('T')[0];
+    inputElement_desde.value = currentDate;
+    inputElement_hasta.value = currentDate;
+    
+    
+    // Obtener los elementos de filtrado
+    const desde = document.querySelector("#edit-desde");
+    const hasta = document.querySelector("#edit-hasta");
+    const categoria = document.querySelector("#edit-categoria");
+    const negocio = document.querySelector("#edit-linea-de-negocio");
+
+    // Agregar event listeners para el evento 'change'
+    desde.addEventListener("change", function() {
+        if(desde.value != '' && hasta.value != ''){
+            //actualizar totales y grafica
+            actualizarGraficos(data)    
+        } 
+    });
+
+    // Agregar event listeners para el evento 'change'
+    hasta.addEventListener("change", function() {
+        if(desde.value != '' && hasta.value != ''){
+        //actualizar totales y grafica
+        actualizarGraficos(data)
+        } 
+    });
+    
+    // Agregar event listeners para el evento 'change'
+    categoria.addEventListener("change", function() {
+        //actualizar totales y grafica
+        actualizarGraficos(data)
+    });
+    
+    // Agregar event listeners para el evento 'change'
+    negocio.addEventListener("change", function() {
+        //actualizar totales y grafica
+        actualizarGraficos(data)
+    });
+    
+
+    let checkData = setInterval(() => {
+      console.log('Cargando data')
+      if (typeof data !== "undefined" && data) {
+        // Verifica si data tiene valor
+        clearInterval(checkData); // Detiene el intervalo
+        actualizarGraficos(data); // Ejecuta la función
+      }
+    }, 100); // Verifica cada 100ms
+
+
+
+
+    // Cargar Chart.js
+  var chartScript = document.createElement("script");
+  chartScript.src = "https://cdn.jsdelivr.net/npm/chart.js";
+  document.head.appendChild(chartScript);
+  console.log("Chart.js cargado");
+
+  // Cargar chartjs-plugin-datalabels después de Chart.js
+  chartScript.onload = function () {
+    var datalabelsScript = document.createElement("script");
+    datalabelsScript.src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels";
+    document.head.appendChild(datalabelsScript);
+    console.log("chartjs-plugin-datalabels cargado");
+    
+    // Inicializa los gráficos después de que ambas librerías estén cargadas
+    datalabelsScript.onload = function () {
+      inicializarGraficos();
+    };
+  };
+
+
+  if(desde && hasta){
+     //actualizar totales
+     actualizarTotales(data)
+    
+     //actualizar los datos de las graficas
+     actualizarGraficos(data)
+  }
+
+  });
+
+  var divTitulo = document.querySelector("#edit-processed-text");
+  const divCard = document.createElement("div");
+  divCard.id = "divCard-new";
+  divCard.classList.add("row");
+  divTitulo.after(divCard);
+  var divCard_new = document.querySelector("#divCard-new");
+
+  var contentCards = `
+      <div class="card col-md-3">
+        <div class="card-top">
+          <p>Total de trámites recibidos</p>
+          <img
+            src="/sites/default/files/2025-09/parametrizar-aval.svg"
+            width="32"
+            height="32" />
+        </div>
+        <p>
+          <span id="totalTramitesRecibidos">0</span>
+        </p>
+        <div class="card-botom d-none">
+          <p class="card-percenteje">0%</p>
+          <p>vs el mes anterior</p>
+        </div>
+      </div>
+      <div class="card  col-md-3">
+        <div class="card-top">
+          <p>Total de tramites en proceso</p>
+          <img
+            src="/sites/default/files/2025-09/list-task.png"
+            width="32"
+            height="32" />
+        </div>
+        <p>
+          <span id="totalTramitesProceso">0</span>
+        </p>
+      </div>
+      <div class="card  col-md-3">
+        <div class="card-top">
+          <p>Total de trámites finalizados</p>
+          <img
+            src="/sites/default/files/2025-09/circle-check.svg"
+            width="32"
+            height="32" />
+        </div>
+        <p>
+          <span id="totalTramitesFinalizados">0</span>
+        </p>
+        <div class="card-botom d-none">
+          <p class="card-percenteje">0%</p>
+          <p>vs el mes anterior</p>
+        </div>
+      </div>
+      <div class="card  col-md-3 d-none">
+        <div class="card-top">
+          <p>Total de trámites cancelados</p>
+          <img
+            src="/sites/default/files/2025-01/book-open-solid.svg"
+            width="32"
+            height="32" />
+        </div>
+        <p>
+          <span id="totalTramitesCancelados">0</span>
+        </p>
+        <div class="card-botom">
+          <p class="card-percenteje">0%</p>
+          <p>vs el mes anterior</p>
+        </div>
+      </div>`;
+  divCard_new.innerHTML = contentCards;
+
+
+
+  // Obtener el div con la clase 'html'
+  var div = document.getElementById('html');
+
+
+  // Crear el contenido HTML
+  var contentHtml = `
+  <main class="f-main-content">
+  <main class="f-main-content">
+  <section class="score-container">
+    <div class="score-wrapper">
+      <div class="score-box">
+        <h3>Por Categoría</h3>
+        <div class="score-chart" hidden>
+          <canvas id="graficoCategoria"></canvas>
+        </div>
+        <br>
+        <div class="score-chart">
+          <canvas id="graficoBarrasCategoria"></canvas>
+        </div>
+        <br>
+        <h3>Por línea de negocio</h3>
+         <div class="score-chart">
+          <canvas id="graficoLineaNegocio" hidden></canvas>
+        </div>
+        <br>
+        <div class="score-chart">
+          <canvas id="graficoBarrasLinea"></canvas>
+        </div>
+      </div>
+      <div class="score-box">
+        <h3>Tiempo promedio de atención (días)</h3>
+        <div class="score-chart">
+          <canvas id="graficoTiempoAtencion"></canvas>
+        </div>
+        <br>
+        <h3>Consulta/Trámite</h3>
+        <div class="score-chart">
+          <canvas id="graficoBarrasConsultaTramite"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  `;
+
+  div.innerHTML = contentHtml;
+
+  //var script = document.createElement("script");
+  //script.src = "https://cdn.jsdelivr.net/npm/chart.js";
+  //document.head.appendChild(script);
+  //console.log("script", script)
+
+
+
+
+
+
+
+  let charts = [];
+
+  // Función para crear gráficos
+  function ctxCategoria(ctx) {  
+  return new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [], // Datos según la imagen
+          backgroundColor: ["#36a4d9", "#19baa3"], // Colores para cada sección
+        },
+      ],
+    },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+      datalabels: {
+        formatter: (value) => {
+          const percentage = value;
+          return `${percentage}%`;
+        },
+        color: "#fff",
+        font: {
+          weight: "bold",
+          size: 14,
+        },
+      },
+    },
+  },
+  plugins: [ChartDataLabels],
+  });
+  }
+
+
+  // Función para crear gráficos
+  function ctxLineaNegocio(ctx) {
+  return new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+        labels: [
+            "Inversión",
+            "Inmobiliaria",
+            "Administración",
+            "Compradores inmobiliarios",
+          ],
+          data: [], // Datos según la imagen
+          backgroundColor: ["#36a4d9", "#19baa3", "#4a90e2", "#f4a261"],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
+        },
+        datalabels: {
+          formatter: (value) => {
+            const percentage = value;
+            return `${percentage}%`;
+          },
+          color: "#fff",
+          font: {
+            weight: "bold",
+            size: 14,
+          },
+        },
+      },
+    },
+    plugins: [ChartDataLabels],
+  });
+  }
+
+
+
+  // Función para crear gráficos
+  function ctxBarrasCategoria(ctx) {
+  return new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Consultas", "Trámites", "TOTAL"],  // Agregamos "TOTAL"
+      datasets: [
+        {
+          data: [], 
+          backgroundColor: ["#36a4d9", "#19baa3", "#4a90e2"], // Agregamos color para TOTAL
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      indexAxis: "y", // Para hacer barras horizontales
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
+          display: false,
+        },
+        datalabels: {
+          formatter: (value) => {
+            return `${value}`;
+          },
+          color: "#fff",
+          font: {
+            weight: "bold",
+            size: 14,
+          },
+          align: "center",
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: {
+            display: false
+          }
+        },
+        y: {
+          grid: {
+            display: false
+          }
+        }
+      }
+    },
+    plugins: [ChartDataLabels],
+  });
+  }
+
+
+
+  // Función para crear gráficos
+  function ctxBarrasLinea(ctx){
+  return new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Inversión", "Inmobiliaria", "Administración", "Compradores inmobiliarios"],
+      datasets: [
+        {
+          data: [], 
+          backgroundColor: ["#36a4d9", "#19baa3", "#4a90e2", "#f4a261"],
+          borderWidth: 1,
+          barThickness: 30, // Ajustamos el grosor para uniformidad
+        },
+      ],
+    },
+    options: {
+      indexAxis: "y", // Barras horizontales
+      responsive: true,
+      maintainAspectRatio: false, // Evita distorsión del tamaño
+      plugins: {
+        legend: {
+          position: "top",
+          display: false,
+        },
+        datalabels: {
+          formatter: (value) => `${value}`,
+          color: "#fff",
+          font: {
+            weight: "bold",
+            size: 14,
+          },
+          align: "center",
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: {
+            display: false,
+          },
+        },
+        y: {
+          grid: {
+            display: false,
+          },
+        },
+      },
+    },
+    plugins: [ChartDataLabels],
+  });
+  }
+
+  function ctxTiempoAtencion(ctx) {
+  return new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Consultas", "Trámites"],
+      datasets: [
+        {
+          data: [], // Datos según la imagen
+          backgroundColor: ["#36a4d9", "#19baa3"],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      indexAxis: 'y', // Hace las barras horizontales
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false,
+        },
+        datalabels: {
+          formatter: (value) => value,
+          color: "#fff",
+          anchor: "center",
+          align: "center",
+          font: {
+            weight: "bold",
+            size: 14,
+          }
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: {
+            display: true,
+            color: '#e0e0e0',
+          },
+          ticks: {
+            stepSize: 2,
+            font: {
+              size: 12
+            }
+          }
+        },
+        y: {
+          grid: {
+            display: false
+          },
+          ticks: {
+            font: {
+              size: 12,
+              color: '#666'
+            }
+          }
+        }
+      },
+      layout: {
+        padding: {
+          left: 10,
+          right: 10
+        }
+      }
+    },
+    plugins: [ChartDataLabels],
+  });
+  }
+
+  // Función para crear gráficos consulta/trámite
+  function ctxBarrasConsultaTramite(ctx) {
+  return new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Extractos", "Certificación Tributaria", "Exentos", "Recaudos", "Inclusión/Eliminación correo", "Anexos Contables", "TOTAL"],  
+      datasets: [
+        {
+          data: [], 
+          backgroundColor: ["#36a4d9", "#19baa3", "#4a90e2", "#f4a261"], 
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      indexAxis: "y", // Para hacer barras horizontales
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
+          display: false,
+        },
+        datalabels: {
+          formatter: (value) => {
+            return `${value}`;
+          },
+          color: "#fff",
+          font: {
+            weight: "bold",
+            size: 14,
+          },
+          align: "center",
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: {
+            display: false
+          }
+        },
+        y: {
+          grid: {
+            display: false
+          }
+        }
+      }
+    },
+    plugins: [ChartDataLabels],
+  });
+  }
+
+  // Inicializa los gráficos después de que ambas librerías estén cargadas
+  // Inicializa los gráficos
+  //window.onload = function () {}
+  function inicializarGraficos() {
+  const ctx1 = document.getElementById("graficoCategoria").getContext("2d");
+  const ctx2 = document.getElementById("graficoLineaNegocio").getContext("2d");
+  const ctx3 = document.getElementById("graficoBarrasCategoria").getContext("2d");
+  const ctx4 = document.getElementById("graficoBarrasLinea").getContext("2d");
+  const ctx5 = document.getElementById("graficoTiempoAtencion").getContext("2d");
+  const ctx6 = document.getElementById("graficoBarrasConsultaTramite").getContext("2d");
+
+  // Crear y almacenar los gráficos en un array
+   charts[1] = ctxCategoria(ctx1, 0);
+   charts[2] = ctxLineaNegocio(ctx2, 0);
+   charts[3] = ctxBarrasCategoria(ctx3, 0);
+   charts[4] = ctxBarrasLinea (ctx4, 0);
+   charts[5] = ctxTiempoAtencion (ctx5, 0);
+   charts[6] = ctxBarrasConsultaTramite (ctx6, 0);
+    
+  };
+
+  const calcularTiempoAtencionEnDias = (dataFiltered) => {
+    let cantidad = 0;
+    let diferenciaDias = 0;
+
+    dataFiltered.forEach(element => {  
+        if(element.estado && element.estado?.toLowerCase() === 'radicado'){
+            cantidad++
+            const fechaSolicitud = new Date(element.fechaSolicitud);
+            const fechaActual = new Date(); // Fecha y hora actuales
+            
+            // Calcular la diferencia en milisegundos y convertirla a días
+            let diasDiferencia = (fechaActual - fechaSolicitud) / (1000 * 3600 * 24);
+            
+            diferenciaDias += diasDiferencia;
+        }
+    });
+
+    let promedio = cantidad > 0 ? diferenciaDias / cantidad : 0;
+
+
+    return {
+      tiempoAtencionDias: parseFloat(promedio), // Redondear a días completos
+      estado: ''
+    };
+  };
+
+  function actualizarGraficos(data) {
+  let solicitudesCorreos = 0;
+  let porcentajeTramites = 0;
+  let consultas = 0;
+  let porcentajeConsultas = 0;
+  let lineaInversion = 0;
+  let inmobiliaria = 0;
+  let administracion = 0;
+  let compradoresInmobiliarios = 0;
+  let porcentajeLineaInversion = 0;
+  let porcentajeInmobiliaria = 0;
+  let porcentajeAdministracion = 0;
+  let porcentajeCompradoresInmobiliarios = 0;
+  let tiemposDeAtencionEnDiasSolicitud = 0;
+  let tiemposDeAtencionEnDiasConsultas = 0;
+  let totalConDatos = 0;
+
+  const desde = document.querySelector("#edit-desde").value;
+  const hasta = document.querySelector("#edit-hasta").value;
+  const categoria = document.querySelector("#edit-categoria").value; // select categoria
+  const negocio = document.querySelector("#edit-linea-de-negocio").value; // select linea negocio
+
+  const desdeDate = new Date(desde + 'T00:00:00Z');
+  const hastaDate = new Date(hasta + 'T23:59:59Z');
+  // hastaDate.setHours(23, 59, 59, 999); // Asegura que incluya todo el día
+
+  const dataFiltered = data.filter(item => {
+    const itemDate = new Date(item['fechaSolicitud']);
+    return itemDate >= desdeDate && itemDate <= hastaDate;
+      // const fechaSolicitud = new Date(item.fechaSolicitud);
+      // const fechaSolicitudStr = fechaSolicitud.toISOString().split('T')[0]; // Convertir a YYYY-MM-DD
+      // const desdeStr = desdeDate.toISOString().split('T')[0];
+      // const hastaStr = hastaDate.toISOString().split('T')[0];
+
+      // return fechaSolicitudStr >= desdeStr && fechaSolicitudStr <= hastaStr;
+  });
+
+  console.log(dataFiltered);
+
+
+  //const dataFiltered = data.filter(item => new Date(item.fechaSolicitud) >= new Date(desde) && new Date(item.fechaSolicitud) <= new Date(hasta));
+  const cantidad = dataFiltered.length;
+
+    solicitudesCorreos = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud_correos').length;
+    consultas = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud certficado tributario' || item.tramite.toLowerCase() == 'solicitud de certiifcado movimientos exentos' || item.tramite.toLowerCase() == 'solicitud certificado recaudo' || item.tramite.toLowerCase() == 'solicitud extracto' && item.lineaNegocio.toLowerCase() != 'solicitud extractos' && item.lineaNegocio.toLowerCase() != 'solicitud de certiifcado movimientos exentos' && item.lineaNegocio.toLowerCase() != 'solicitud certificado recaudo' && item.lineaNegocio.toLowerCase() != 'solicitud certificados tributarios').length;
+    console.log("consultas", consultas)
+    tiemposDeAtencionEnDiasConsultas = calcularTiempoAtencionEnDias(dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud certificado tributario' || item.tramite.toLowerCase() == 'solicitud de certiifcado movimientos exentos' || item.tramite.toLowerCase() == 'solicitud certificado recaudo' || item.tramite.toLowerCase() == 'solicitud extracto' && item.lineaNegocio.toLowerCase() != 'solictud extractos' && item.lineaNegocio.toLowerCase() != 'solicitud de certiifcado movimientos exentos' && item.lineaNegocio.toLowerCase() == 'solicitud certificado recaudo' && item.lineaNegocio.toLowerCase() != 'solictud certificados tributarios'))['tiempoAtencionDias'];
+    console.log('tiemposDeAtencionEnDiasConsultas1 ', tiemposDeAtencionEnDiasConsultas);
+    
+    tiemposDeAtencionEnDiasSolicitud = calcularTiempoAtencionEnDias(dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud_correos'))['tiempoAtencionDias'];
+
+    // tiemposDeAtencionEnDiasConsultas = consultas > 0 ? 1 : 0
+    porcentajeTramites = solicitudesCorreos > 0 ? (solicitudesCorreos/cantidad)*100 : 0;
+    porcentajeConsultas = consultas > 0 ? (consultas/cantidad)*100 : 0;
+    
+    console.log("dataFiltered", dataFiltered);
+
+    // filtrar por linea de negocio
+    if(negocio == ''){
+        let lineaNegocio = ''
+        dataFiltered.forEach(item => {
+            lineaNegocio = item.lineaNegocio.toLowerCase();
+            switch (lineaNegocio) {
+                case 'linea de inversión':
+                case 'inversion':
+                case '1 - inversion':
+                    lineaInversion++;
+                    break;
+            
+                case 'fiducia inmobiliaria':
+                case '2 - inmobiliario':
+                    inmobiliaria++;
+                    break;
+            
+                case 'fiducia administración':
+                case '3 - administracion':
+                    administracion++;
+                    break;
+            
+                case 'compradores inmobiliarios':
+                    compradoresInmobiliarios++;
+                    break;
+            
+                default:
+                    break;
+            }
+            
+        });
+  } else {
+    switch (negocio) {
+      case "Inversión":
+        lineaInversion = dataFiltered.filter(
+          (item) =>
+            item.lineaNegocio.toLowerCase() == "linea de inversión" ||
+            item.lineaNegocio.toLowerCase() == "1 - inversion" ||
+            item.lineaNegocio.toLowerCase() == "inversion"
+        ).length;
+        break;
+      case "Fiducia inmobiliaria":
+      case '3 - administracion':
+        inmobiliaria = dataFiltered.filter(
+          (item) => item.lineaNegocio.toLowerCase() == "fiducia inmobiliaria"
+        ).length;
+        break;
+      case "Fiducia administración":
+        administracion = dataFiltered.filter(
+          (item) => item.lineaNegocio.toLowerCase() == "fiducia administración" || item.lineaNegocio.toLowerCase() == "3 - administracion" 
+        ).length;
+        break;
+      case "Compradores inmobiliarios":
+        compradoresInmobiliarios = dataFiltered.filter(
+          (item) =>
+            item.lineaNegocio.toLowerCase() == "compradores inmobiliarios"
+        ).length;
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  totalConDatos = lineaInversion + inmobiliaria + administracion + compradoresInmobiliarios;
+
+  porcentajeLineaInversion = lineaInversion > 0 ? (lineaInversion / totalConDatos) * 100 : 0;
+  porcentajeInmobiliaria = inmobiliaria > 0 ? (inmobiliaria / totalConDatos) * 100 : 0;
+  porcentajeAdministracion = administracion > 0 ? (administracion / totalConDatos) * 100 : 0;
+  porcentajeCompradoresInmobiliarios = compradoresInmobiliarios > 0 ? (compradoresInmobiliarios / totalConDatos) * 100 : 0;
+
+  const datosCategoria = [consultas, solicitudesCorreos, consultas + solicitudesCorreos];
+  const porcentajesDatosCategoria = [porcentajeConsultas.toFixed(1), porcentajeTramites.toFixed(1)];
+  const datosLineaNegocio = [lineaInversion, inmobiliaria, administracion, compradoresInmobiliarios] 
+  const porcentajesDatosLineaNegocio = [porcentajeLineaInversion.toFixed(1), porcentajeInmobiliaria.toFixed(1), porcentajeAdministracion.toFixed(1), porcentajeCompradoresInmobiliarios.toFixed(1)] 
+  const datosTiempoAtencion = [tiemposDeAtencionEnDiasConsultas, tiemposDeAtencionEnDiasSolicitud.toFixed(1)]; 
+
+  // Totales de consulta/trámite
+  const anexosContables = dataFiltered.filter(item => item.tramite.toLowerCase() == 'anexos contables').length;
+  const extractos = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud extracto' && item.lineaNegocio.toLowerCase() != 'solictud extractos').length;
+  const certificados = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud certficado tributario' && item.lineaNegocio.toLowerCase() != 'solictud certificados tributarios').length;
+  const exentos = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud de certiifcado movimientos exentos' && item.lineaNegocio.toLowerCase() != 'solicitud de certiifcado movimientos exentos').length;
+  const recaudos = dataFiltered.filter(item => item.tramite.toLowerCase() == 'solicitud certificado recaudo' && item.lineaNegocio.toLowerCase() != 'solicitud certificado recaudo').length;
+  const datosConsutaTramite = [extractos, certificados, exentos, recaudos, solicitudesCorreos, anexosContables, (extractos + certificados + exentos + recaudos + solicitudesCorreos + anexosContables)];
+
+  console.log('exentos', exentos)
+  console.log('datosConsutaTramite', datosConsutaTramite)
+  console.log('porcentajesDatosLineaNegocio', porcentajesDatosLineaNegocio)
+  console.log('datosLineaNegocio', datosLineaNegocio)
+  console.log('anexosContables', anexosContables)
+
+    // Actualizar gráficos
+    if (charts[1]) {
+        charts[1].data.datasets[0].data = porcentajesDatosCategoria;
+        charts[1].update(); // Refrescar el gráfico de categoría
+    }
+
+    if (charts[2]) {
+        charts[2].data.datasets[0].data = porcentajesDatosLineaNegocio;
+        charts[2].update(); // Refrescar el gráfico de categoría
+    }
+    
+    if (charts[3]) {    
+        charts[3].data.datasets[0].data = datosCategoria;
+        charts[3].update(); // Refrescar el gráfico de barras de categoría
+    }
+    
+    if (charts[4]) {
+        charts[4].data.datasets[0].data = datosLineaNegocio;
+        charts[4].update(); // Refrescar el gráfico de barras de categoría
+    }
+    
+    if (charts[5]) {
+        charts[5].data.datasets[0].data = datosTiempoAtencion;
+        charts[5].update(); // Refrescar el gráfico de tiempo de atención
+    }
+
+    if (charts[6]) {
+        charts[6].data.datasets[0].data = datosConsutaTramite;
+        charts[6].update(); // Refrescar el gráfico de consulta/Trámite
+    }
+
+    actualizarTotales(dataFiltered)
+
+  }
+
+  function actualizarTotales(dataFiltered){
+    //document.querySelector("#totalTramitesRecibidos").innerHTML = dataFiltered.length;
+
+   // Filtrar los trámites según su estado
+  const tramitesEnProceso = dataFiltered.filter(item => item.estado && (item.estado === 'EN PROCESO' || item.estado?.toLowerCase() !== 'radicado' && item.estado?.toLowerCase() !== 'cancelada')).length;
+  const tramitesFinalizados = dataFiltered.filter(item => item.estado === 'FINALIZADA' || item.estado?.toLowerCase() === 'finalizada').length;
+  const tramitesCancelados = dataFiltered.filter(item => item.estado === 'CANCELADO' || item.estado?.toLowerCase() === 'cancelada').length;
+
+  //  document.querySelector("#totalTramitesProceso").innerHTML = tramitesEnProceso;
+  //  document.querySelector("#totalTramitesFinalizados").innerHTML = tramitesFinalizados;
+  //  document.querySelector("#totalTramitesCancelados").innerHTML = tramitesCancelados;
+  }
+
+
+  //////////////////////////dashboard////////////////////
+
+  const historico_data = document.getElementsByName('historico_data')[0];
+  let data3 = historico_data ? JSON.parse(historico_data.value)[0].var : [];
+  console.log('data3', data3)
+  if (data3) { 
+
+
+    // Obtener la fecha y hora actual
+    const ahora = new Date(); // Ejemplo: 2025-02-25T09:33:03.869355
+    ahora.setMinutes(0, 0, 0);
+
+    //console.log("fecha sin minutos:", ahora);
+
+    // Obtener la fecha y hora exacta de hace una semana
+    const semanaPasada = new Date(ahora);
+    const semanaPasada2 = new Date(ahora);
+    semanaPasada2.setDate(ahora.getDate() - 7); // Restar 7 días
+    semanaPasada2.setHours(semanaPasada2.getHours() - 1);
+    semanaPasada.setDate(ahora.getDate() - 7); // Restar 7 días
+
+    //console.log("La semana pasada es:", semanaPasada)
+
+    // Inicializar contadores para la semana pasada
+    let totalRecibidosPasado = 0;
+    let totalEnProcesoPasado = 0;
+    let totalFinalizadosPasado = 0;
+    let totalVencidosPasado = 0;
+
+    // Recorrer y contar trámites
+    data3.forEach(tramite => {
+        if (tramite.fechaInicio) {
+            let fechaInicio = new Date(tramite.fechaInicio);
+
+            // Validar si el trámite cayó dentro del mismo rango de fecha y hora exacta hace una semana
+            //let esSemanaPasada = fechaInicio >= "2025-02-18T10:00:00.00" && fechaInicio <= "2025-02-18T10:59:00.00";
+            //let esSemanaPasada = fechaInicio  >= "Tue Feb 18 2025 10:00:00 GMT-0500 (hora estándar de Colombia)" && fechaInicio <= "Tue Feb 25 2025 10:00:00 GMT-0500 (hora estándar de Colombia)";
+            //let esSemanaPasada = fechaInicio >= semanaPasada && fechaInicio <= ahora;
+            let esSemanaPasada = fechaInicio >= semanaPasada2 && fechaInicio <= semanaPasada;
+
+            //console.log("semana pasada:", semanaPasada);
+            //console.log("fecha de hoy:", ahora);
+
+            if (esSemanaPasada) {
+                if (tramite.estado === "Radicado") {
+                    totalRecibidosPasado++;
+                    //totalEnProcesoPasado++; // También se considera "en proceso"
+                } else if (['Finalizada', 'Cancelada'].includes(tramite.estado)) {
+                    totalFinalizadosPasado++;
+                } else if (!['Radicado', 'Cancelada'].includes(tramite.estado)) {
+                    totalEnProcesoPasado++;
+                }
+
+                // Calcular vencidos
+                const diferenciaDias = (ahora - fechaInicio) / (1000 * 60 * 60 * 24);
+                if (diferenciaDias > 1) {
+                    totalVencidosPasado++;
+                }
+            }
+        }
+    });
+
+    // Calcular el total de trámites en la semana pasada
+    let totalTramitesSemanaPasada =
+        totalRecibidosPasado + totalEnProcesoPasado + totalFinalizadosPasado + totalVencidosPasado;
+
+        const business_data2 = document.getElementsByName('business_data')[0]
+        data2 = business_data2 ? JSON.parse(business_data2.value)[0].var : [];
+
+        data2 = data2.filter(row =>
+      !(
+        // Excluir casos específicos
+        //(row.estado === "Radicado" && row.correo === false && row.mt940 === true) ||
+        //(row.estado === "Radicado" && row.correo === true && row.mt940 === true) ||
+        //(row.estado === "En Inclusión/Eliminación Correo" && row.correo === false && row.mt940 === true) ||
+        //(row.estado === "En Inclusión/Eliminación Correo" && row.correo === true && row.mt940 === true) ||
+        (row.estado === "En Registro MT-940") ||
+        (row.estado === "Finalizado Registro MT-940") ||
+        (row.correo === true && row.mt940 === true)
+      )
+    );
+        // Inicializar contadores
+        let totalRecibidos = 0;
+        let totalEnProceso = 0;
+        let totalFinalizados = 0;
+        let totalVencidos = 0;
+
+        const hoy = new Date();
+        hoy.setHours(0, 0, 0, 0);
+
+        // Recorrer y contar por estado
+        data2.forEach(tramite => {
+            if (tramite.estado === "Radicado") {
+                totalRecibidos++;
+                //totalEnProceso++; // También se considera "en proceso"
+            } else if (['Finalizada', 'Cancelada'].includes(tramite.estado)) {
+                totalFinalizados++;
+            } else if (['En Inclusión/Eliminación Correo', 'Finalizada Inclusión/eliminación correo', 'Habilitación/inhabilitación servicio de envío de información solicitada', 'Finalizada Marcación servicio Solicitado', 'Finalizada', 'Devuelto para corregir'].includes(tramite.estado)) {
+                totalEnProceso++;
+            }
+
+            if (tramite.estado === "Cancelada") {
+                totalVencidos++;
+            }
+        });
+
+        // Mostrar resultados en consola
+        console.log('Total recibidos:', totalRecibidos);
+        console.log('Total en proceso:', totalEnProceso);
+        console.log('Total finalizados:', totalFinalizados);
+        console.log('Total vencidos:', totalVencidos);
+
+        // Actualizar el dashboard
+        document.querySelector("#totalTramitesRecibidos").innerHTML = totalRecibidos;
+        document.querySelector("#totalTramitesProceso").innerHTML = totalEnProceso;
+        document.querySelector("#totalTramitesFinalizados").innerHTML = totalFinalizados;
+        document.querySelector("#totalTramitesCancelados").innerHTML = totalVencidos;
+
+
+    // Calcular los porcentajes
+    let porcentajeRecibidos = (((totalRecibidos - totalRecibidosPasado) / totalRecibidosPasado) * 100).toFixed(0);
+    let porcentajeEnProceso = (((totalEnProceso - totalEnProcesoPasado) / totalEnProcesoPasado) * 100).toFixed(0);
+    let porcentajeFinalizados = (((totalFinalizados - totalFinalizadosPasado) / totalFinalizadosPasado) * 100).toFixed(0);
+    let porcentajeVencidos = (((totalVencidos - totalVencidosPasado) / totalVencidosPasado) * 100).toFixed(0);
+    
+    //actualizar porcentajes
+    
+    
+    if (porcentajeRecibidos === "Infinity") {
+        document.querySelector("#html > main > section.card-container > div:nth-child(1) > div.card-botom > p.card-percenteje").innerText = "0%";
+    } else {
+        document.querySelector("#html > main > section.card-container > div:nth-child(1) > div.card-botom > p.card-percenteje").innerText = porcentajeRecibidos + "%";
+    }
+    if (porcentajeFinalizados === "NaN") {
+        document.querySelector("#html > main > section.card-container > div:nth-child(3) > div.card-botom > p.card-percenteje").innerText = "0%"
+    } else if(porcentajeFinalizados === "Infinity") {
+        document.querySelector("#html > main > section.card-container > div:nth-child(3) > div.card-botom > p.card-percenteje").innerText = "0%"
+    }else {
+        document.querySelector("#html > main > section.card-container > div:nth-child(3) > div.card-botom > p.card-percenteje").innerText = porcentajeFinalizados + "%"
+    }
+
+    // Mostrar resultados en consola
+    console.log('--- HISTÓRICO - SEMANA PASADA (MISMA HORA) ---');
+    console.log(`Rango analizado: ${semanaPasada.toISOString()} → ${ahora.toISOString()}`);
+    console.log(`Total trámites: ${totalTramitesSemanaPasada}`);
+    console.log(`Total recibidos: ${totalRecibidosPasado} (${porcentajeRecibidos}%)`);
+    console.log(`Total en proceso: ${totalEnProcesoPasado} (${porcentajeEnProceso}%)`);
+    console.log(`Total finalizados: ${totalFinalizadosPasado} (${porcentajeFinalizados}%)`);
+    console.log(`Total vencidos: ${totalVencidosPasado} (${porcentajeVencidos}%)`);
+  }
+
+  document.querySelector("#edit-actions-submit").style.display = 'none'
+
+
+
+
+
+
+
+
+
+
+
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ""
+  ajax_effect: ""
+  ajax_speed: null
+  page: true
+  page_submit_path: ""
+  page_confirm_path: ""
+  page_theme_name: ""
+  form_title: both
+  form_submit_once: false
+  form_open_message: ""
+  form_close_message: ""
+  form_exception_message: ""
+  form_previous_submissions: false
+  form_confidential: false
+  form_confidential_message: ""
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ""
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ""
+  form_access_denied_message: ""
+  form_access_denied_attributes: {}
+  form_file_limit: ""
+  form_attributes: {}
+  form_method: ""
+  form_action: ""
+  share: false
+  share_node: false
+  share_theme_name: ""
+  share_title: true
+  share_page_body_attributes: {}
+  submission_label: ""
+  submission_exception_message: ""
+  submission_locked_message: ""
+  submission_log: false
+  submission_excluded_elements: {}
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {}
+  submission_views_replace: {}
+  submission_user_columns: {}
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ""
+  submission_access_denied_message: ""
+  submission_access_denied_attributes: {}
+  previous_submission_message: ""
+  previous_submissions_message: ""
+  autofill: false
+  autofill_message: ""
+  autofill_excluded_elements: {}
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ""
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ""
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ""
+  wizard_prev_button_label: ""
+  wizard_next_button_label: ""
+  wizard_toggle: false
+  wizard_toggle_show_label: ""
+  wizard_toggle_hide_label: ""
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ""
+  preview_title: ""
+  preview_message: ""
+  preview_attributes: {}
+  preview_excluded_elements: {}
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ""
+  draft_loaded_message: ""
+  draft_pending_single_message: ""
+  draft_pending_multiple_message: ""
+  confirmation_type: page
+  confirmation_url: ""
+  confirmation_title: ""
+  confirmation_message: ""
+  confirmation_attributes: {}
+  confirmation_back: true
+  confirmation_back_label: ""
+  confirmation_back_attributes: {}
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ""
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ""
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: all
+  purge_days: 1
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - administrator
+      - funcionario
+      - super_admin
+      - accesos_logicos
+      - parametrizador
+      - sac_correos
+      - sac_campanas
+      - seguimiento
+      - soporte_contable
+      - parametrizador_contable
+      - analista_gestion_inmobiliaria
+      - coordinador_gestion_inmobiliaria
+      - gerente_gestion_inmobiliaria
+      - contador_inmobiliario
+    users: {}
+    permissions: {}
+  view_any:
+    roles:
+      - administrator
+      - funcionario
+      - super_admin
+      - accesos_logicos
+      - parametrizador
+      - sac_correos
+      - sac_campanas
+      - seguimiento
+      - soporte_contable
+      - parametrizador_contable
+      - analista_gestion_inmobiliaria
+      - coordinador_gestion_inmobiliaria
+      - gerente_gestion_inmobiliaria
+      - contador_inmobiliario
+    users: {}
+    permissions: {}
+  update_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  delete_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  purge_any:
+    roles: {}
+    users: {}
+    permissions: {}
+  view_own:
+    roles: {}
+    users: {}
+    permissions: {}
+  update_own:
+    roles: {}
+    users: {}
+    permissions: {}
+  delete_own:
+    roles: {}
+    users: {}
+    permissions: {}
+  administer:
+    roles: {}
+    users: {}
+    permissions: {}
+  test:
+    roles: {}
+    users: {}
+    permissions: {}
+  configuration:
+    roles: {}
+    users: {}
+    permissions: {}
+handlers: {}
+variants: {}
